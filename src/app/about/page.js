@@ -2,17 +2,17 @@
 
 import React from "react";
 
-import disclaimersArabic from "@/constants/disclaimerA";
+// import disclaimersArabic from "@/constants/disclaimerA";
 import disclaimersEng from "@/constants/disclaimerE";
 import "./about.scss";
 
 export default function About() {
-    const [activeLang, setActiveLang] = React.useState(disclaimersEng);
+    const [activeLang] = React.useState(disclaimersEng);
     const [activeEl, setActiveEl] = React.useState(activeLang[0]);
     const [selectedOption, setSelectedOption] = React.useState(0);
     const [isFade, setIsFade] = React.useState(false);
-    const [isFadeButtons, setIsFadeButtons] = React.useState(false);
-    const [activeTarget, setIsTarget] = React.useState(0);
+    const [isFadeButtons] = React.useState(false);
+    const [ setIsTarget] = React.useState(0);
 
     const onChange = (e) => {
         const selectedValue = e.target.value;
@@ -21,23 +21,23 @@ export default function About() {
         setTimeout(() => setIsFade(false), 500);
     };
 
-    const switchLang = () => {
-        if (activeLang === disclaimersEng) {
-            setIsFade(true);
-            setTimeout(() => setIsFade(false), 500);
-            setIsFadeButtons(true);
-            setTimeout(() => setActiveLang(disclaimersArabic), 500);
-            setTimeout(() => setIsFadeButtons(false), 500);
-            setTimeout(() => setActiveEl(disclaimersArabic[activeTarget]), 500);
-        } else if (activeLang === disclaimersArabic) {
-            setIsFade(true);
-            setTimeout(() => setIsFade(false), 500);
-            setTimeout(() => setActiveLang(disclaimersEng), 500);
-            setIsFadeButtons(true);
-            setTimeout(() => setIsFadeButtons(false), 500);
-            setTimeout(() => setActiveEl(disclaimersEng[activeTarget]), 500);
-        }
-    };
+    // const switchLang = () => {
+    //     if (activeLang === disclaimersEng) {
+    //         setIsFade(true);
+    //         setTimeout(() => setIsFade(false), 500);
+    //         setIsFadeButtons(true);
+    //         setTimeout(() => setActiveLang(disclaimersArabic), 500);
+    //         setTimeout(() => setIsFadeButtons(false), 500);
+    //         setTimeout(() => setActiveEl(disclaimersArabic[activeTarget]), 500);
+    //     } else if (activeLang === disclaimersArabic) {
+    //         setIsFade(true);
+    //         setTimeout(() => setIsFade(false), 500);
+    //         setTimeout(() => setActiveLang(disclaimersEng), 500);
+    //         setIsFadeButtons(true);
+    //         setTimeout(() => setIsFadeButtons(false), 500);
+    //         setTimeout(() => setActiveEl(disclaimersEng[activeTarget]), 500);
+    //     }
+    // };
 
     const onButtonClick = (e) => {
         const target = e.currentTarget.dataset.id;
