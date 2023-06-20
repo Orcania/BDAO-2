@@ -41,11 +41,14 @@ export default function Ap() {
                         {" "}
                         <h1 className="fmb sm:text-[24px] text-[19px]">Interested?</h1>
                     </div>
-                    <div className="flex justify-center font-semibold fmi bg-blur2">
-                        <button className="button3D md:inline-flex hidden">
-                            <span className="text-[16px] has-te">Apply and Learn more here</span>
-                        </button>
-                    </div>
+                    <div className="flex md:order-2 md:flex-1 md:justify-end">
+                    <a className="button3D" href="mailto:inquiries@bricklayerdao.xyz">
+                        <div className="flex">
+                            <span className="text-white font-medium">Apply and Learn more here</span>
+                            <img width={18} className="ml-3 mt-1" src="/Arrow 1.svg" />
+                        </div>
+                    </a>
+                </div>
                 </div>
             </div>
         </div>

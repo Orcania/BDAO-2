@@ -57,13 +57,14 @@ export default function Home() {
                 </div>
                 <div className="md:mt-6">
                     <div
-                        className="flex  justify-center mt-12 mb-9 font-semibold fmi mt-10 "
+                        className="flex justify-center mt-12 mb-9 font-semibold fmi mt-10"
                         style={{ marginBottom: "90px" }}
                     >
-                        <button className="button3D inline-flex md:p-3 sm:w-[200px] w-[160px]">
-                           
-                                Launch the App
-                            
+                        <button
+                            className="button3D inline-flex md:p-3 sm:w-[200px] w-[160px]"
+                            style={{ fontSize: "14px" }}
+                        >
+                            Launch the App
                             <img width={18} className="ml-3 mt-1" src="/Arrow 1.svg" />
                         </button>
                     </div>
@@ -103,12 +104,17 @@ export default function Home() {
                             <div
                                 className="flex video justify-center md:mt-16 mt-6 mx-7 my-2 h-[300px]"
                                 style={{
-                                    cursor: "pointer",
+                                    cursor: "not-allowed",
                                     position: "relative",
                                     borderRadius: "5px",
                                 }}
                             >
-                                <Image width={45} height={45} src="/Ellipse 10.svg" alt="" />
+                                <span
+                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+                                    style={{ zIndex: 1 }}
+                                >
+                                    Coming Soon...
+                                </span>{" "}
                                 <div className="absolute md:left-[0px] md:bottom-[-5px] bottom-[0px] left-[30px] md:w-44 md:h-44 w-24 h-24 ">
                                     <Image
                                         src="/shovel.png"
@@ -129,25 +135,27 @@ export default function Home() {
                             </div>
                             <div
                                 className="flex vector justify-center mt-12 mb-9 font-semibold fmi mt-10"
-                                style={{ marginBottom: "90px",zIndex:1 }}
+                                style={{ marginBottom: "90px", zIndex: 1 }}
                             >
-                                <button className="button3D inline-flex md:p-3 sm:w-[200px] w-[160px]">
-                                    
-                                        JOIN the WAIT
-                                    
-                                    <img width={18} className="ml-3 mt-1" src="/Arrow 1.svg" />
-                                </button>
+                                <a
+                                    href="https://t.me/+tU7KlgQHnSk3ZWNk"
+                                    className="button3D inline-flex sm:w-[200px] w-[180px]"
+                                    style={{ display: "flex", alignItems: "center" }}
+                                >
+                                    <span style={{ flex: 1, fontSize: "14px" }}>JOIN the WAIT</span>
+                                    <img width="18" className="ml-3 mt-1" src="/Arrow 1.svg" />
+                                </a>
                             </div>
                             <div
-                            className="bricktop"
+                                className="bricktop"
                                 style={{
                                     position: "absolute",
-                                    
+
                                     bottom: "-10px",
                                     left: "75%",
                                     padding: "10px",
-                                     
-                                    zIndex:0
+
+                                    zIndex: 0,
                                 }}
                             >
                                 <img
@@ -157,7 +165,6 @@ export default function Home() {
                                     alt=""
                                     className="desktop-image" /* Add this className for desktop styling */
                                 />
-                                
                             </div>
                         </div>
                     </div>
