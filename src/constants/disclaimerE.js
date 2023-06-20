@@ -596,7 +596,7 @@ const disclaimersEng = [
                         New Treasury NAV: $23M
                         <br />
                         <br />
-                        <Image src="/example.jpg" width={700} height={700} alt="example image" />
+                        <Image src="/bar.jpg" width={700} height={700} alt="example image" />
                         *Assumption that Real Estate Asset Value remains unchanged at $15,000,000
                         <br />
                         <br />
@@ -1244,7 +1244,7 @@ const disclaimersEng = [
                         5-year intervals (2023, 2028 & 2033)
                         <br /> <br />
                         <Image
-                            src="/tokenomics.jpg"
+                            src="/tokenomic.jpg"
                             width={700}
                             height={700}
                             alt="Tokenomics Image"
