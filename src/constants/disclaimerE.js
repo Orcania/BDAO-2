@@ -597,6 +597,7 @@ const disclaimersEng = [
                         <br />
                         <br />
                         <Image src="/bar.jpg" width={700} height={700} alt="example image" />
+                        <br />
                         *Assumption that Real Estate Asset Value remains unchanged at $15,000,000
                         <br />
                         <br />
