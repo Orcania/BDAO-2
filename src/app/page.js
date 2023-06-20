@@ -61,7 +61,7 @@ export default function Home() {
                         style={{ marginBottom: "90px" }}
                     >
                         <button className="button3D inline-flex md:p-3 sm:w-[200px] w-[160px]">
-                            <span className="md:text-[15px] sm:text-[10px]">
+                            <span className="">
                                 Launch the App
                             </span>
                             <img width={18} className="ml-3 mt-1" src="/Arrow 1.svg" />
@@ -132,7 +132,7 @@ export default function Home() {
                                 style={{ marginBottom: "90px",zIndex:1 }}
                             >
                                 <button className="button3D inline-flex md:p-3 sm:w-[200px] w-[160px]">
-                                    <span className="md:text-[15px] sm:text-[14px] has-te">
+                                    <span className="">
                                         JOIN the WAIT
                                     </span>
                                     <img width={18} className="ml-3 mt-1" src="/Arrow 1.svg" />
