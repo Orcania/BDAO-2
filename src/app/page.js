@@ -51,7 +51,7 @@ export default function Home() {
                         }}
                     ></model-viewer>
                 </div>
-                <div className="bg-small-img md:hidden">
+                <div className="bg-small-img md:hidden pt-44">
                     <br></br>
                     <br></br>
                 </div>

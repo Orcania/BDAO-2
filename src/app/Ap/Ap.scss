@@ -27,3 +27,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #e26e5d; /* Color of the scrollbar handle on hover */
   }
+
+  @media only screen and (min-width: 768px) {
+    .bg-img {
+        background-image: url("/bg-images/home-bg.png");
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}

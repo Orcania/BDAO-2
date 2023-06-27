@@ -50,7 +50,7 @@ export default function About() {
     };
 
     return (
-        <section className="flex flex-col">
+        <section className="flex flex-col bg-towers">
             <div className="max-w-screen-xl lg:flex gap-12 lg:mx-auto p-4 mt-12">
                 <div className="column-1 lg:block md:flex justify-between gap-6">
                     <div className="flex">
