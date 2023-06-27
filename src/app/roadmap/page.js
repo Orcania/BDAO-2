@@ -99,7 +99,6 @@ export default function useRoadmap() {
                     <br />
                     {renderContent()}
                 </div>
-                <Footer />
             </div>
         </>
     );
