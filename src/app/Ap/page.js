@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Ap.scss";
 import ap from "@/constants/app";
+import Image from "next/image";
 
 export default function Ap() {
     return (
@@ -45,7 +46,13 @@ export default function Ap() {
                     <a className="button3D" href="mailto:inquiries@bricklayerdao.xyz">
                         <div className="flex">
                             <span className="text-white font-medium">Apply and Learn more here</span>
-                            <img width={18} className="ml-3 mt-1" src="/Arrow 1.svg" />
+                            <Image
+                                width={18} 
+                                height={18}
+                                className="ml-3 mt-1" 
+                                src="/Arrow 1.svg" 
+                                alt=""
+                            ></Image>
                         </div>
                     </a>
                 </div>

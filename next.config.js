@@ -4,7 +4,7 @@ module.exports = {
     },
     experimental: {
         // Enables the styled-components SWC transform
-        styledComponents: true
+        // styledComponents: true
       },
     webpack: (config) => {
         config.module.rules.push({

@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import "./roadmap.scss";
 import React, { useEffect } from "react";
+import Image from "next/image";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = React.useState(null);
@@ -20,20 +22,32 @@ export default function useRoadmap() {
                 return (
                     <div className="bg-small-towers2">
                         <div className="bg-road1 flex justify-center invisible">
-                            <img src="/bg-images/road-year1.png" />
+                            <img
+                            className=""
+                            src="/bg-images/road-year1.png"
+                            alt=""
+                            ></img>
                         </div>
                     </div>
                 );
             case 2:
                 return (
                     <div className='bg-road2 flex justify-center invisible'>
-                        <img src="/bg-images/road-year2.png"/>
+                       <img
+                            className=""
+                            src="/bg-images/road-year2.png"
+                            alt=""
+                            ></img>
                     </div>
                 );
             case 3:
                 return (
                     <div className="bg-road3 flex justify-center invisible">
-                        <img src="/bg-images/road-year3.png"/>
+                        <img
+                            className=""
+                            src="/bg-images/road-year3.png"
+                            alt=""
+                            ></img>
                     </div>
                 );
             default:

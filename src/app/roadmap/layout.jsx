@@ -21,7 +21,7 @@ export default function RootLayoutt({ children , className }) {
             />
             <Header />
 
-            <div className={className}>
+            <div className="main-bg">
                 <div className="bg-texture">
                     <div>
                         {/* <section className="pt-[81px]"></section> */}
