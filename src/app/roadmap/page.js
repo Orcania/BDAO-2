@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import Footer from "../layout/footer-layout";
 import "./roadmap.scss";
 import React, { useEffect } from "react";
 
@@ -98,6 +99,7 @@ export default function useRoadmap() {
                     <br />
                     {renderContent()}
                 </div>
+                <Footer />
             </div>
         </>
     );
