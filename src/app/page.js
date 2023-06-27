@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable spaced-comment */
 /* eslint-disable react/no-unescaped-entities */
+
 import Image from "next/image";
 import "./page.scss";
 import "../scss/globals.scss";
@@ -74,14 +75,13 @@ export default function Home() {
                             <p className="title fmb text-[24px] mt-14 md:block hidden vector1">
                                 Start laying $BRICKS
                             </p>
-                            <div className="mt-3 md:font-semibold font-normal text-sm sm:text-base md:text-lg md:block hidden">
+                            <div className="mt-3 font-semibold text-base md:block hidden">
                                 <p>
-                                    This platform provides our community with access to
-                                    institutional-grade occupiers and builds wealth through
-                                    sophisticated real estate transactions fueled by digital asset
-                                    growth. An original and simple approach which prioritizes smart
-                                    hedging strategies, consistent dividend generation, and creating
-                                    capital value appreciation.
+                                    Physical asset investment platform fueled by virtual asset growth. 
+                                    The Bricklayer community provides decentralized access to institutional-grade
+                                    real estate and builds wealth through occupier focussed transactions. 
+                                    An original yet simple approach which prioritizes consistent dividend 
+                                    generation and value appreciation.
                                 </p>
                             </div>
 
@@ -92,12 +92,11 @@ export default function Home() {
                             </div>
                             <div className="mt-3 font-semibold md:hidden block text-[16px]">
                                 <p>
-                                    This platform provides our community with access to
-                                    institutional-grade occupiers and builds wealth through
-                                    sophisticated real estate transactions fueled by digital asset
-                                    growth. An original and simple approach which prioritizes smart
-                                    hedging strategies, consistent dividend generation, and creating
-                                    capital value appreciation.
+                                    Physical asset investment platform fueled by virtual asset growth. 
+                                    The Bricklayer community provides decentralized access to institutional-grade
+                                    real estate and builds wealth through occupier focussed transactions. 
+                                    An original yet simple approach which prioritizes consistent dividend 
+                                    generation and value appreciation.
                                 </p>
                             </div>
 
@@ -110,7 +109,7 @@ export default function Home() {
                                 }}
                             >
                                 <span
-                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center fmb text-[20px]"
                                     style={{ zIndex: 1 }}
                                 >
                                     Coming Soon...

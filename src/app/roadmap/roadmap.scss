@@ -20,20 +20,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .bg-small-towers {
-        background-image: url("/bg-images/small-towers.png");
+    .bg-towers {
+        background-image: url("/bg-images/towers-roadmap.png");
         background-repeat: no-repeat;
-        background-size: 33%;
-        background-position: left 1200px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .bg-small-towers2 {
-        background-image: url("/bg-images/small-towers2.png");
-        background-repeat: no-repeat;
-        background-size: 33%;
-        background-position: right bottom;
+        background-size: contain;
+        background-position: bottom;
     }
 }
 
@@ -112,6 +103,7 @@
         margin-right: 15%;
     }
 }
+
 ::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
     background: rgba(226, 110, 93, 0.3); /* Color of the scrollbar handle with opacity */

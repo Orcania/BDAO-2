@@ -19,21 +19,19 @@ export default function useRoadmap() {
         switch (activeYear) {
             case 1:
                 return (
-                    <div className="bg-small-towers2">
-                        <div className="bg-road1 flex justify-center invisible">
+                        <div className="bg- justify-center">
                             <img
-                            className=""
+                            className="invisible"
                             src="/bg-images/road-year1.png"
                             alt=""
                             ></img>
                         </div>
-                    </div>
                 );
             case 2:
                 return (
-                    <div className='bg-road2 flex justify-center invisible'>
+                    <div className='flex justify-center'>
                        <img
-                            className=""
+                            className="invisible"
                             src="/bg-images/road-year2.png"
                             alt=""
                             ></img>
@@ -41,9 +39,9 @@ export default function useRoadmap() {
                 );
             case 3:
                 return (
-                    <div className="bg-road3 flex justify-center invisible">
+                    <div className="flex justify-center">
                         <img
-                            className=""
+                            className="invisible"
                             src="/bg-images/road-year3.png"
                             alt=""
                             ></img>
@@ -56,8 +54,8 @@ export default function useRoadmap() {
     return (
         <>
             <div className={`main ${activeYear === 1 ? "bg-road1" : ""} ${activeYear === 2 ? "bg-road2" : ""} ${activeYear === 3 ? "bg-road3" : ""} overflow-x-hidden`}>
-                <div className="bg-small-towers">
-                    <div className="title fmb text-4xl sm:text-7xl text-center mt-14">ROADMAP</div>
+                <div className="">
+                    <div className="roadmap-title fmb text-4xl sm:text-7xl text-center mt-14 z-10">ROADMAP</div>
                     <div className="bg-blur mt-8">
                         <div className="flex justify-center gap-6 py-4">
                         <button
