@@ -2,7 +2,6 @@
 "use client";
 import "./roadmap.scss";
 import React, { useEffect } from "react";
-import Image from "next/image";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = React.useState(null);
