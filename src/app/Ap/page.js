@@ -4,7 +4,7 @@ import ap from "@/constants/app";
 
 export default function Ap() {
     return (
-        <div>
+        <div className="bg-img">
             <div className="title text-center lg:text-[48px] sm:text-[30px] text-[25px] pt-10 bg-blur1">
                 <p className="fmb">Active Participant</p>
                 <p className="fmb">Positions</p>

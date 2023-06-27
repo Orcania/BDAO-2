@@ -97,4 +97,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #e26e5d; /* Color of the scrollbar handle on hover */
   }
-  
+
+  @media  screen and (min-width: 768px) {
+    .bg-towers{
+      background-image: url('/bg-images/towers.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+    } 
+  }

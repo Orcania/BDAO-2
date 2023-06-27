@@ -1,9 +1,40 @@
-
-.bg-road {
-    background-image: url("/bg-images/Group 144.svg");
-    background-repeat: repeat-y;
-    background-size: auto;
+.bg-road1 {
+    background-image: url("/bg-images/road-year1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center top;
+}
+
+.bg-road2 {
+    background-image: url("/bg-images/road-year2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+}
+
+.bg-road3 {
+    background-image: url("/bg-images/road-year3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+}
+
+@media screen and (min-width: 1200px) {
+    .bg-small-towers {
+        background-image: url("/bg-images/small-towers.png");
+        background-repeat: no-repeat;
+        background-size: 33%;
+        background-position: left 1200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bg-small-towers2 {
+        background-image: url("/bg-images/small-towers2.png");
+        background-repeat: no-repeat;
+        background-size: 33%;
+        background-position: right bottom;
+    }
 }
 
 .bg-footer {

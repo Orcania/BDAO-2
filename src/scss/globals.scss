@@ -12,8 +12,6 @@ html {
     border-width: 3px;
 }
 
-
-
 .main-bg {
     background: linear-gradient(180deg, #ffb898 0%, #ffdbaf 100%);
 }
@@ -142,7 +140,7 @@ html {
 
 @media only screen and (min-width: 768px) {
     .bg-img {
-        background-image: url("/bg-images/photo_5084860946681277544_y_1-removebg-preview.png");
+        background-image: url("/bg-images/home-bg.png");
         background-size: contain;
         background-position: center 160px;
         background-repeat: no-repeat;
@@ -151,11 +149,13 @@ html {
 
 @media only screen and (max-width: 768px) {
     .bg-small-img {
-        background-image: url("/bg-images/photo_5084860946681277544_y_1-removebg-preview 1 (1).png");
+        background-image: url("/bg-images/home-bg.png");
         background-position: bottom;
-        background-size: calc(430px);
+        background-size: cover;
         background-repeat: no-repeat;
     }
+
+    
     // .box {
     //     position: relative; /* Add this to establish a positioning context */
     //   }
