@@ -38,7 +38,7 @@ export default function Home() {
             <section className="bg-img">
                 <div className="flex justify-center mt-7">
                     <model-viewer
-                        src="/media/models/brickLogo.glb"
+                        src="/media/models/B-logo.glb"
                         loading="eager"
                         auto-rotate
                         camera-controls
