@@ -56,7 +56,7 @@ export default function useRoadmap() {
         <>
             <div className={`main ${activeYear === 1 ? "bg-road1" : ""} ${activeYear === 2 ? "bg-road2" : ""} ${activeYear === 3 ? "bg-road3" : ""} overflow-x-hidden`}>
                 <div className="">
-                    <div className="roadmap-title fmb text-4xl sm:text-7xl text-center mt-14 z-10">ROADMAP</div>
+                    <div className="roadmap-title fmb text-4xl sm:text-7xl text-center text-shadow mt-14 z-10">ROADMAP</div>
                     <div className="bg-blur mt-8">
                         <div className="flex justify-center gap-6 py-4">
                         <button
