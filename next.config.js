@@ -2,9 +2,6 @@ module.exports = {
     images: {
         domains: ["www.linkedin.com", "twitter.com"],
     },
-    experimental: {
-        
-      },
     webpack: (config) => {
         config.module.rules.push({
             test: /\.glb$/,

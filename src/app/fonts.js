@@ -6,6 +6,7 @@ export const ibm = IBM_Plex_Mono({
     subsets: ["latin"],
     variable: "--font-ibm",
 });
+
 export const ps2p = Press_Start_2P({
     weight: ["400"],
     subsets: ["latin"],

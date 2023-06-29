@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
     color: white;
     overflow-x: hidden;
+}
+
+.body {
+    font-family: var(--font-ibm);
+}
+
+.fmb {
+    font-family: var(--font-ps2p);
 }
 
 .border-3 {
@@ -28,7 +35,7 @@ html {
     background: rgba(226, 110, 93, 0.8);
 }
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     // .box {
     //   position: relative; /* Add this to establish a positioning context */
     // }
@@ -155,7 +162,6 @@ html {
         background-repeat: no-repeat;
     }
 
-    
     // .box {
     //     position: relative; /* Add this to establish a positioning context */
     //   }
@@ -171,17 +177,15 @@ html {
     //     background-size: contain; /* Make the image fit inside the container */
     //   }
 }
-.bricktop{
-   /* Set initial width to 100% */
-          height: auto; 
+.bricktop {
+    /* Set initial width to 100% */
+    height: auto;
 }
 @media (max-width: 768px) {
     .bricktop {
-        
-        
-         /* Position the image at the right */
-         width: 25%; /* Set desired width for desktop screens */
-            height: auto; 
+        /* Position the image at the right */
+        width: 25%; /* Set desired width for desktop screens */
+        height: auto;
     }
 }
 @media only screen and (min-width: 1280px) {
@@ -216,4 +220,8 @@ html {
         width: 240px;
         height: 300px;
     }
+}
+
+model-viewer {
+    --progress-bar-color: transparent;
 }
