@@ -44,7 +44,7 @@ const ap = [
                 ></model-viewer>
             )
         },
-        title: 'Blockchain (Full Stack) Developper',
+        title: 'Blockchain (Full Stack) Developer',
         text: 'We are looking for a skilled developer who is comfortable with both front and back end technologies. As a lead, you will be responsible for web applications, periodic updates, technical advisory on implementation of DAO mechanics, building scalable APIs, on-boarding and evaluating developer partnerships'
     },
     {
