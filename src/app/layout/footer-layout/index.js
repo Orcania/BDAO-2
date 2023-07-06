@@ -21,64 +21,65 @@ export default function Footer() {
                 </div>
 
                 <img
-                    className="sm:block hidden"
+                    className="sm:block hidden bg-[#DCDCDC]"
                     style={{ width: "100%", height: "auto", maxHeight: "700px" }}
-                    
                     src="/footer/walld.png"
                     alt=""
                 ></img>
                 <Image
-                    className="sm:hidden block"
+                    className="sm:hidden block bg-[#DCDCDC]"
                     width={768}
                     height={50}
-                    src="/footer/wallm.jpg"
+                    src="/footer/wallm.png"
                     alt=""
                 ></Image>
-                <div className="socials bg-[#242424] py-4 flex justify-between">
-                    <h1 className="font-medium text-[20px] ml-12">@2023 BrickLayer</h1>
-                    <div
-                        className="font-medium text[20px] flex mr-12"
-                        style={{ alignItems: "center" }}
-                    >
-                        <a
-                            href="https://t.me/+tU7KlgQHnSk3ZWNk"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                <div className="socials absolute w-full  bottom-0 pb-2">
+                    <div className="container mx-auto  flex justify-between items-center">
+                        <h1 className="font-medium text-[20px]">@2023 BrickLayer</h1>
+                        <div
+                            className="font-medium text[20px] flex mr-12"
+                            style={{ alignItems: "center" }}
                         >
-                            <Image
-                                className="mr-6"
-                                width={20}
-                                height={20}
-                                alt=""
-                                src="/footer/share.svg"
-                            ></Image>
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/company/bricklayerdao/about/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                className="mr-6"
-                                width={20}
-                                height={20}
-                                alt=""
-                                src="/footer/linkedin.svg"
-                            ></Image>
-                        </a>
-                        <a
-                            href="https://twitter.com/BricklayerDao "
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                className=""
-                                width={20}
-                                height={20}
-                                alt=""
-                                src="/footer/twitter.svg"
-                            ></Image>
-                        </a>
+                            <a
+                                href="https://t.me/+tU7KlgQHnSk3ZWNk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    className="mr-6"
+                                    width={20}
+                                    height={20}
+                                    alt=""
+                                    src="/footer/share.svg"
+                                ></Image>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/company/bricklayerdao/about/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    className="mr-6"
+                                    width={20}
+                                    height={20}
+                                    alt=""
+                                    src="/footer/linkedin.svg"
+                                ></Image>
+                            </a>
+                            <a
+                                href="https://twitter.com/BricklayerDao "
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    className=""
+                                    width={20}
+                                    height={20}
+                                    alt=""
+                                    src="/footer/twitter.svg"
+                                ></Image>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
