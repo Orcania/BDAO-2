@@ -62,7 +62,7 @@ export default function Home() {
                         style={{ marginBottom: "90px" }}
                     >
                         <button
-                            className="button3D inline-flex md:p-3 sm:w-[200px] w-[160px]"
+                            className="button3D inline-flex md:p-3 sm:w-[200px] w-[160px] hidden"
                             style={{ fontSize: "14px" }}
                         >
                             Launch the App
@@ -116,7 +116,7 @@ export default function Home() {
                                 </span>{" "}
                                 <div className="absolute md:left-[0px] md:bottom-[-5px] bottom-[0px] left-[30px] md:w-44 md:h-44 w-24 h-24 ">
                                     <Image
-                                        src="/shovel.png"
+                                        src="/shovel.svg"
                                         width={175}
                                         height={175}
                                         alt=""

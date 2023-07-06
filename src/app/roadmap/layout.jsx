@@ -22,7 +22,7 @@ export default function RootLayoutt({ children , className }) {
             <Header />
 
             <div className="main-bg">
-                <div className="bg-texture">
+                <div className="bg-frame">
                     <div>
                         {/* <section className="pt-[81px]"></section> */}
                         {children}
