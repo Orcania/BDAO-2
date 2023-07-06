@@ -21,21 +21,21 @@ export default function Footer() {
                 </div>
 
                 <img
-                    className="sm:block hidden"
+                    className="sm:block hidden bg-[#DCDCDC]"
                     style={{ width: "100%", height: "auto", maxHeight: "700px" }}
                     
                     src="/footer/walld.png"
                     alt=""
                 ></img>
                 <Image
-                    className="sm:hidden block"
+                    className="sm:hidden block bg-[#DCDCDC]"
                     width={768}
                     height={50}
-                    src="/footer/wallm.jpg"
+                    src="/footer/wallm.png"
                     alt=""
                 ></Image>
-                <div className="socials bg-[#242424] py-4 flex justify-between">
-                    <h1 className="font-medium text-[20px] ml-12">@2023 BrickLayer</h1>
+                <div className="socials absolute w-full translate-y-[5px] bottom-3 left-3 flex justify-between">
+                    <h1 className="font-medium text-[20px]">@2023 BrickLayer</h1>
                     <div
                         className="font-medium text[20px] flex mr-12"
                         style={{ alignItems: "center" }}

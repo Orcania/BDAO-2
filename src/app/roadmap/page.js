@@ -19,7 +19,7 @@ export default function useRoadmap() {
         switch (activeYear) {
             case 1:
                 return (
-                        <div className="bg-towers flex justify-center">
+                        <div className="flex justify-center">
                             <img
                             className="invisible"
                             src="/bg-images/road-year1.png"
@@ -30,7 +30,7 @@ export default function useRoadmap() {
                 );
             case 2:
                 return (
-                    <div className='flex bg-towers justify-center'>
+                    <div className='flex justify-center'>
                        <img
                             className="invisible"
                             src="/bg-images/road-year2.png"
@@ -40,7 +40,7 @@ export default function useRoadmap() {
                 );
             case 3:
                 return (
-                    <div className="flex bg-towers justify-center">
+                    <div className="flex justify-center">
                         <img
                             className="invisible"
                             src="/bg-images/road-year3.png"
