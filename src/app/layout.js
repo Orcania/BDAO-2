@@ -27,7 +27,7 @@ export const metadata = {
 
 function LoadingPage() {
     return (
-        <div className="main-bg h-[1000px] flex flex-col justify-center items-center">
+        <div className="main-bg h-screen flex flex-col justify-center items-center">
             <model-viewer
                         src="/media/models/B-logo.glb"
                         loading="eager"
