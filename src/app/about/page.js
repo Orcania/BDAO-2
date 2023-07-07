@@ -122,11 +122,11 @@ export default function About() {
                                     color: "white",
                                     overflow: "hidden",
                                     whiteSpace: "nowrap", // Prevent text wrapping
-                                    textOverflow: "ellipsis", 
+                                    textOverflow: "ellipsis",
                                 }),
                                 option: (provided, state) => ({
                                     ...provided,
-                                    
+
                                     border: "2px solid white",
                                     backgroundColor: state.isSelected ? "white" : "#E26E5D",
                                     color: state.isSelected ? "#E26E5D" : "white",
@@ -142,32 +142,32 @@ export default function About() {
                                 menu: (provided) => ({
                                     ...provided,
                                     border: "1px solid white",
-padding:"3px",
+                                    padding: "3px",
                                     backgroundColor: "#E26E5D",
                                     color: "white",
                                     whiteSpace: "nowrap", // Prevent text wrapping
                                     overflow: "hidden", // Hide any overflowing text
-                                    textOverflow: "ellipsis", 
+                                    textOverflow: "ellipsis",
                                 }),
                                 singleValue: (provided) => ({
                                     ...provided,
                                     color: "white",
                                     whiteSpace: "nowrap", // Prevent text wrapping
                                     overflow: "hidden", // Hide any overflowing text
-                                    textOverflow: "ellipsis", 
+                                    textOverflow: "ellipsis",
                                 }),
                                 placeholder: (provided) => ({
                                     ...provided,
                                     color: "white",
                                     whiteSpace: "nowrap", // Prevent text wrapping
                                     overflow: "hidden", // Hide any overflowing text
-                                    textOverflow: "ellipsis", 
+                                    textOverflow: "ellipsis",
                                 }),
                                 menuList: (provided) => ({
                                     ...provided,
                                     whiteSpace: "nowrap", // Prevent text wrapping
-                                     // Hide any overflowing text
-                                    textOverflow: "ellipsis", 
+                                    // Hide any overflowing text
+                                    textOverflow: "ellipsis",
                                     "&::-webkit-scrollbar": {
                                         width: "5px",
                                     },

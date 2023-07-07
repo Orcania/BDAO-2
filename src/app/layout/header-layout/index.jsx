@@ -108,8 +108,8 @@ const Header = () => {
                         </li>
                         <li>
                             <Link
-                                href="/ap"
-                                className={`header-link  ${pathname === "/ap" ? "active" : ""}`}
+                                href="/Ap"
+                                className={`header-link  ${pathname === "/Ap" ? "active" : ""}`}
                             >
                                 AP
                             </Link>

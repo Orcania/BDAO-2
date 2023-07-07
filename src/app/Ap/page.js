@@ -1,5 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
 import "./Ap.scss";
+
 import ap from "@/constants/app";
 import Image from "next/image";
 
@@ -38,24 +38,33 @@ export default function Ap() {
                     })}
                 </div>
                 <div className="mt-8">
-                    <div style={{justifyContent:"center",textAlign:"center", alignItems:"center",marginBottom:"20px"}}>
+                    <div
+                        style={{
+                            justifyContent: "center",
+                            textAlign: "center",
+                            alignItems: "center",
+                            marginBottom: "20px",
+                        }}
+                    >
                         {" "}
                         <h1 className="fmb sm:text-[24px] text-[19px]">Interested?</h1>
                     </div>
                     <div className="flex md:order-2 md:flex-1 md:justify-end">
-                    <a className="button3D" href="mailto:inquiries@bricklayerdao.xyz">
-                        <div className="flex">
-                            <span className="text-white font-medium">Apply and Learn more here</span>
-                            <Image
-                                width={18} 
-                                height={18}
-                                className="ml-3 mt-1" 
-                                src="/Arrow 1.svg" 
-                                alt=""
-                            ></Image>
-                        </div>
-                    </a>
-                </div>
+                        <a className="button3D" href="mailto:inquiries@bricklayerdao.xyz">
+                            <div className="flex">
+                                <span className="text-white font-medium">
+                                    Apply and Learn more here
+                                </span>
+                                <Image
+                                    width={18}
+                                    height={18}
+                                    className="ml-3 mt-1"
+                                    src="/Arrow 1.svg"
+                                    alt=""
+                                ></Image>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
