@@ -34,10 +34,10 @@ export default function Footer() {
                     alt=""
                 ></Image>
                 <div className="socials absolute w-full  bottom-0 pb-2">
-                    <div className="container mx-auto  flex justify-between items-center">
-                        <h1 className="font-medium text-[20px]">@2023 BrickLayer</h1>
+                    <div className="container flex justify-around mb-4 md:justify-between mx-0 md:mb-0 md:mx-2 items-center">
+                        <h1 className="font-medium text-[15px]">@2023 BrickLayer</h1>
                         <div
-                            className="font-medium text[20px] flex mr-12"
+                            className="font-medium text[15px] flex"
                             style={{ alignItems: "center" }}
                         >
                             <a
