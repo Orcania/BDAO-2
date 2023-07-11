@@ -79,7 +79,7 @@ export default function About() {
                                     onClick={onButtonClick}
                                     key={item.id}
                                     data-id={item.id}
-                                    className={`hover:bg-[#E26E5D] active:bg-[#E26E5D] opacity-90 border-transparent py-2 cursor-pointer xl:w-[340px] ${
+                                    className={`hover:bg-[#E26E5D] active:bg-[#E26E5D] opacity-90 border-transparent py-2 px-8 cursor-pointer xl:w-[340px] ${
                                         activeEl === item ? "bg-[#E26E5D]" : ""
                                     }`}
                                 >

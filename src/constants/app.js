@@ -51,21 +51,21 @@ const ap = [
         id: 2,
         image: () => {
             return (
-                <model-viewer
-                    src="/media/models/megaphone.gltf"
-                    loading="eager"
-                    auto-rotate
-                    camera-controls
-                    rotation-per-second="20deg"
-                    shadow-intensity="1"
-                    touch-action="pan-y"
-                    disable-zoom
-                    xposure="0.6"
-                    style={{
-                    width: "100%",
-                    height: 160,
-                                }}
-                ></model-viewer>
+                    <model-viewer
+                        src="/media/models/megaphone.gltf"
+                        loading="eager"
+                        auto-rotate
+                        camera-controls
+                        rotation-per-second="20deg"
+                        shadow-intensity="1"
+                        touch-action="pan-y"
+                        disable-zoom
+                        xposure="0.6"
+                        style={{
+                        width: "100%",
+                        height: 160,
+                                    }}
+                    ></model-viewer>
             )
         },
         title: 'Marketing Manager',
@@ -85,6 +85,7 @@ const ap = [
                     touch-action="pan-y"
                     disable-zoom
                     xposure="0.6"
+                    color="#808080"
                     style={{
                     width: "100%",
                     height: 160,
