@@ -2,7 +2,7 @@ import Script from "next/script";
 
 import LoadingComponent from "@/components/internal/loading-component/loading.component";
 import Header from "./layout/header-layout";
-import Footer from "./layout/footer-layout";
+import Footer from "./layout/footer-layout/footer.component";
 
 import { ibm, ps2p } from "./fonts";
 

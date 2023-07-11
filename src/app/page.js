@@ -38,7 +38,7 @@ export default function Home() {
             <section className="bg-img">
                 <div className="flex justify-center mt-7">
                     <model-viewer
-                        src="/media/models/B-logo.glb"
+                        src="/media/models/brick-texture.glb"
                         loading="eager"
                         auto-rotate
                         camera-controls
@@ -77,11 +77,12 @@ export default function Home() {
                             </p>
                             <div className="mt-3 font-semibold text-base md:block hidden">
                                 <p>
-                                    Physical asset investment platform fueled by virtual asset growth. 
-                                    The Bricklayer community provides decentralized access to institutional-grade
-                                    real estate and builds wealth through occupier focussed transactions. 
-                                    An original yet simple approach which prioritizes consistent dividend 
-                                    generation and value appreciation.
+                                    Physical asset investment platform fueled by virtual asset
+                                    growth. The Bricklayer community provides decentralized access
+                                    to institutional-grade real estate and builds wealth through
+                                    occupier focussed transactions. An original yet simple approach
+                                    which prioritizes consistent dividend generation and value
+                                    appreciation.
                                 </p>
                             </div>
 
@@ -92,11 +93,12 @@ export default function Home() {
                             </div>
                             <div className="mt-3 font-semibold md:hidden block text-[16px]">
                                 <p>
-                                    Physical asset investment platform fueled by virtual asset growth. 
-                                    The Bricklayer community provides decentralized access to institutional-grade
-                                    real estate and builds wealth through occupier focussed transactions. 
-                                    An original yet simple approach which prioritizes consistent dividend 
-                                    generation and value appreciation.
+                                    Physical asset investment platform fueled by virtual asset
+                                    growth. The Bricklayer community provides decentralized access
+                                    to institutional-grade real estate and builds wealth through
+                                    occupier focussed transactions. An original yet simple approach
+                                    which prioritizes consistent dividend generation and value
+                                    appreciation.
                                 </p>
                             </div>
 
