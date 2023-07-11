@@ -44,7 +44,7 @@ const ap = [
                 ></model-viewer>
             )
         },
-        title: 'Blockchain (Full Stack) Developer',
+        title: 'Blockchain Developer FILLED',
         text: 'We are looking for a skilled developer who is comfortable with both front and back end technologies. As a lead, you will be responsible for web applications, periodic updates, technical advisory on implementation of DAO mechanics, building scalable APIs, on-boarding and evaluating developer partnerships'
     },
     {
@@ -116,7 +116,7 @@ const ap = [
                 ></model-viewer>
             )
         },
-        title: 'Project Accelerator -FILLED',
+        title: 'Project Accelerator FILLED',
         text: "We are looking for highly experienced project accelerator thoroughly versed in blockchain technologies with specific  applications to commercial  real estate and/or  physical assets. The  project accelerator will  advise the founder team on  organizational growth,  grant applications,  technology selection, and  prospective VC engagements. Must be able to call out risks and be no stranger to ambiguity."
     },
     {
@@ -140,7 +140,7 @@ const ap = [
                 ></model-viewer>
             )
         },
-        title: 'Accounting Manager -FILLED',
+        title: 'Accounting Manager FILLED',
         text: "We are looking for an experienced finance and accounting leader readily able to build accounting systems and operating procedures. Background in financial modeling and DeFi is essential."
     },
 ]
