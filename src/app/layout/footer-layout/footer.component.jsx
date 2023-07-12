@@ -6,6 +6,8 @@ import styles from "./footer.module.scss";
 
 const { doll } = styles;
 
+// add a new feature
+
 export default function Footer() {
     return (
         <footer>
