@@ -68,7 +68,7 @@ const ap = [
                     ></model-viewer>
             )
         },
-        title: 'Marketing Manager',
+        title: 'Marketing Manager FILLED',
         text: "We are looking for a passionate crypto and blockchain ecosystems marketing expert to drive the DAO's marketing strategy and work closely with the Founders and Investor Relations Ap. This AP will effectuate programs to maximize the DAO's presence in the blockchain and real estate communities. Must be able to think creatively and act decisively"
     },
     {
@@ -117,8 +117,8 @@ const ap = [
                 ></model-viewer>
             )
         },
-        title: 'Project Accelerator FILLED',
-        text: "We are looking for highly experienced project accelerator thoroughly versed in blockchain technologies with specific  applications to commercial  real estate and/or  physical assets. The  project accelerator will  advise the founder team on  organizational growth,  grant applications,  technology selection, and  prospective VC engagements. Must be able to call out risks and be no stranger to ambiguity."
+        title: 'AI Specialist Filled',
+        text: "We are seeking a highly skilled AI Specialist to join our dynamic team and play a pivotal role in shaping the future of real estate on the blockchain. Responsible for providing expert guidance and strategic insights to drive the successful implementation of AI technologies within our real estate projects on the blockchain. You will collaborate closely with cross-functional teams to analyze requirements, design AI solutions, and oversee their deployment."
     },
     {
         id: 5,
