@@ -4,7 +4,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/sunglases.gltf"
+                    src="/media/models/AP_Sunglasses.glb"
                     loading="eager"
                     auto-rotate
                     camera-controls
@@ -28,7 +28,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/chain.gltf"
+                    src="/media/models/AP_chain.glb"
                     loading="eager"
                     auto-rotate
                     camera-controls
@@ -52,7 +52,7 @@ const ap = [
         image: () => {
             return (
                     <model-viewer
-                        src="/media/models/megaphone.gltf"
+                        src="/media/models/AP_Rupor.glb"
                         loading="eager"
                         auto-rotate
                         camera-controls
@@ -76,7 +76,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/portfolio.gltf"
+                    src="/media/models/AP_Investor.glb"
                     loading="eager"
                     auto-rotate
                     camera-controls
@@ -85,7 +85,6 @@ const ap = [
                     touch-action="pan-y"
                     disable-zoom
                     xposure="0.6"
-                    color="#808080"
                     style={{
                     width: "100%",
                     height: 160,
@@ -101,7 +100,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/accelerometer.gltf"
+                    src="/media/models/AP_Acselerator.glb"
                     loading="eager"
                     auto-rotate
                     camera-controls
@@ -125,7 +124,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/calculator.gltf"
+                    src="/media/models/AP_accountant.glb"
                     loading="eager"
                     auto-rotate
                     camera-controls
