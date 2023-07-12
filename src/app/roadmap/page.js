@@ -5,13 +5,22 @@ import React, { useEffect } from "react";
 
 export default function useRoadmap() {
   const [activeYear, setActiveYear] = React.useState(null);
-  const [carPosition, setCarPosition] = React.useState(0);
+  const [carPosition, setCarPosition] = React.useState(100);
+  const [isCarMoving, setIsCarMoving] = React.useState(false);
 
-
+  useEffect(() => {
+    if (isCarMoving) {
+      const timeoutId = setTimeout(() => {
+        setIsCarMoving(false);
+      }, 500);
+      return () => {
+        clearTimeout(timeoutId);
+      };
+    }
+  }, [isCarMoving]);
 
   useEffect(() => {
     setActiveYear(1); 
-    setCarPosition(160);
 
     // fetchBackendData()
     // .then((response) => {
