@@ -11,7 +11,7 @@ export default function useRoadmap() {
 
   useEffect(() => {
     setActiveYear(1); 
-    setCarPosition(120);
+    setCarPosition(160);
 
     // fetchBackendData()
     // .then((response) => {
