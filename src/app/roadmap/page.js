@@ -11,6 +11,15 @@ export default function useRoadmap() {
 
   useEffect(() => {
     setActiveYear(1); 
+    setCarPosition(120);
+
+    // fetchBackendData()
+    // .then((response) => {
+    // })
+    // .catch((error) => {
+    //   console.error("Error fetching backend data:", error);
+    // });
+
   }, []);
 
   const handleYearClick = (year) => {
@@ -95,7 +104,7 @@ export default function useRoadmap() {
           </div>
           <br />
           {renderContent()}
-          <div className="absolute inset-0 flex items-start justify-center h-full " style={{ top: '35%' }}>
+          <div className="absolute inset-0 flex items-start justify-center h-full " style={{ top: `${carPosition}%` }}>
             <div className="relative">
               {/* Car */}
               <img
