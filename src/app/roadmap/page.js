@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = React.useState(null);
-    const carPositions = [150, 175, 100]; // Positions for Year 1, Year 2, Year 3
+    const carPositions = [125, 75, 50]; // Positions for Year 1, Year 2, Year 3
     const [currentCarPosition, setCurrentCarPosition] = React.useState(50);
     const [isCarMoving, setIsCarMoving] = React.useState(false);
 
@@ -113,7 +113,7 @@ export default function useRoadmap() {
                         className="absolute inset-0 flex items-start justify-center h-full "
                         style={{
                             top: `${currentCarPosition}%`,
-                            transition: isCarMoving ? "top 6s" : "none",
+                            transition: isCarMoving ? "top 7s" : "none",
                         }}
                     >
                         <div className="relative">
@@ -124,7 +124,7 @@ export default function useRoadmap() {
                     </div>
                     {/* Images */}
                     <div className="absolute inset-0 items-start justify-center h-full flex flex-shrink gap-36" style={{
-                            top: `${175}%`,
+                            top: `${125}%`,
                         }}>
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />

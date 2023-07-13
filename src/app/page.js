@@ -118,7 +118,7 @@ export default function Home() {
                                 </span>{" "}
                                 <div className="absolute md:left-[0px] md:bottom-[-5px] bottom-[0px] left-[30px] md:w-44 md:h-44 w-24 h-24 ">
                                     <Image
-                                        src="/shovel.svg"
+                                        src="/shovel.png"
                                         width={175}
                                         height={175}
                                         alt=""
