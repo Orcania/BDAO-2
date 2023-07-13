@@ -123,9 +123,7 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 items-start justify-center h-full flex flex-shrink gap-36" style={{
-                            top: `${125}%`,
-                        }}>
+                    <div className="absolute inset-0 items-center justify-center h-full flex flex-shrink gap-36 mt-[2000px]" >
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
