@@ -4,7 +4,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/AP_Sunglasses.glb"
+                    src="/media/models/sunglases.gltf"
                     loading="eager"
                     auto-rotate
                     camera-controls
@@ -28,7 +28,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/AP_chain.glb"
+                    src="/media/models/chain.gltf"
                     loading="eager"
                     auto-rotate
                     camera-controls
@@ -52,7 +52,7 @@ const ap = [
         image: () => {
             return (
                     <model-viewer
-                        src="/media/models/AP_Rupor.glb"
+                        src="/media/models/megaphone.gltf"
                         loading="eager"
                         auto-rotate
                         camera-controls
@@ -76,7 +76,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/AP_Investor.glb"
+                    src="/media/models/portfolio.gltf"
                     loading="eager"
                     auto-rotate
                     camera-controls
@@ -100,7 +100,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/AP_Acselerator.glb"
+                    src="/media/models/accelerometer.gltf"
                     loading="eager"
                     auto-rotate
                     camera-controls
@@ -124,7 +124,7 @@ const ap = [
         image: () => {
             return (
                 <model-viewer
-                    src="/media/models/AP_accountant.glb"
+                    src="/media/models/calculator.gltf"
                     loading="eager"
                     auto-rotate
                     camera-controls
