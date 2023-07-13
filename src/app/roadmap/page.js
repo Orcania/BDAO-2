@@ -13,7 +13,7 @@ export default function useRoadmap() {
         if (isCarMoving) {
             const timeoutId = setTimeout(() => {
                 setIsCarMoving(false);
-            }, 3000);
+            }, 10000);
             return () => {
                 clearTimeout(timeoutId);
             };
@@ -21,12 +21,12 @@ export default function useRoadmap() {
     }, [isCarMoving]);
 
     useEffect(() => {
-        setCurrentCarPosition(150);
+        setCurrentCarPosition(125);
+        setIsCarMoving(true);
     }, []);
 
     useEffect(() => {
         setActiveYear(1);
-        setIsCarMoving(true);
     }, []);
 
     const handleYearClick = (year) => {
@@ -118,14 +118,16 @@ export default function useRoadmap() {
                     >
                         <div className="relative">
                             {/* Car */}
+                            <div></div>
                             <img src="/car.png" className={`car mr-64 `} alt="Car" size={30} />
-
-                            {/* Images */}
-                            <div className=" flex flex-shrink gap-36">
-                                <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
-                                <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
-                            </div>
                         </div>
+                    </div>
+                    {/* Images */}
+                    <div className="absolute inset-0 items-start justify-center h-full flex flex-shrink gap-36" style={{
+                            top: `${175}%`,
+                        }}>
+                        <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
+                        <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
                 </div>
             </div>
