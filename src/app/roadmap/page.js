@@ -27,10 +27,6 @@ export default function useRoadmap() {
     useEffect(() => {
         setActiveYear(1);
         setIsCarMoving(true);
-        window.scrollTo({
-            top: (currentCarPosition * window.innerHeight) / 100,
-            behavior: "smooth",
-        });
     }, []);
 
     const handleYearClick = (year) => {
