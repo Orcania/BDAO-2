@@ -113,7 +113,7 @@ export default function useRoadmap() {
                         className="absolute inset-0 flex items-start justify-center h-full "
                         style={{
                             top: `${currentCarPosition}%`,
-                            transition: isCarMoving ? "top 3s" : "none",
+                            transition: isCarMoving ? "top 6s" : "none",
                         }}
                     >
                         <div className="relative">
