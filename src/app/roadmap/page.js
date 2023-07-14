@@ -13,7 +13,7 @@ export default function useRoadmap() {
         if (isCarMoving) {
             const timeoutId = setTimeout(() => {
                 setIsCarMoving(false);
-            }, 3000);
+            },10000);
             return () => {
                 clearTimeout(timeoutId);
             };

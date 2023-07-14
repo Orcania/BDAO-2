@@ -38,7 +38,7 @@ export default function Home() {
             <section className="bg-img">
                 <div className="flex justify-center mt-7">
                     <model-viewer
-                        src="/media/models/brick-texture.glb"
+                        src="/media/models/brick-b-latest.glb"
                         loading="eager"
                         auto-rotate
                         camera-controls
@@ -118,7 +118,7 @@ export default function Home() {
                                 </span>{" "}
                                 <div className="absolute md:left-[0px] md:bottom-[-5px] bottom-[0px] left-[30px] md:w-44 md:h-44 w-24 h-24 ">
                                     <Image
-                                        src="/shovel.png"
+                                        src="/shovel.svg"
                                         width={175}
                                         height={175}
                                         alt=""
