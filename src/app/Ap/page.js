@@ -26,8 +26,16 @@ export default function Ap() {
                         return (
                             <div
                                 key={item.id}
-                                className="xl:hover:translate-y-[-30px] transition duration-500 ease-in-out bg-[#E26E5D] bg-opacity-70 text-center border-3 border-[#a9a9a9] hover:border-white px-6 pb-7"
+                                className="relative bg-[#E26E5D] bg-opacity-70 text-center border-3 border-[#a9a9a9] hover:border-white px-6 pb-7"
                             >
+                                {item.frame && (
+                                    <img
+                                        src={item.frame}
+                                        alt=""
+                                        className="absolute top-0 left-0 w-[146px] h-[146px]"
+                                    />
+                                )}
+
                                 <div>{item.image()}</div>
                                 <h1 className="fmb sm:text-[24px] text-[19px]">{item.title}</h1>
                                 <div className="font-semibold mt-9">
