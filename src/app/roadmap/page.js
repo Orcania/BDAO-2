@@ -40,7 +40,7 @@ export default function useRoadmap() {
             case 1:
                 return (
                     <div className="flex justify-center">
-                        <img className="invisible w-[596px] h-[3739px]" src="/bg-images/road-year1.png" alt=""></img>
+                        <img className="invisible w-[596px]" src="/bg-images/road-year1.png" alt=""></img>
                     </div>
                 );
             case 2:
