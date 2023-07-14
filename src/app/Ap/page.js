@@ -29,12 +29,10 @@ export default function Ap() {
                                 className="relative bg-[#E26E5D] bg-opacity-70 text-center border-3 border-[#a9a9a9] hover:border-white px-6 pb-7"
                             >
                                 {item.frame && (
-                                    <Image
+                                    <img
                                         src={item.frame}
-                                        width={100}
-                                        height={100}
                                         alt=""
-                                        className="absolute top-0 left-0"
+                                        className="absolute top-0 left-0 w-[146px] h-[146px]"
                                     />
                                 )}
 
