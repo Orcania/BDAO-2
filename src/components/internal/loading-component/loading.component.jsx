@@ -2,8 +2,16 @@
 
 import { useEffect, useState } from "react";
 
-export default function LoadingComponent() {
+export default function LoadingComponent({delays}) {
     const [isLoading, setLoading] = useState(true);
+    /*
+    const [delay , setDelay] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => setDelay(true), 2000);
+        delays = delay;
+    },[delay]) 
+    */
 
     useEffect(() => {
         // const handleRouteChangeComplete = (e) => {

@@ -9,6 +9,7 @@ export default function useRoadmap() {
     const [currentCarPosition, setCurrentCarPosition] = React.useState(50);
     const [isCarMoving, setIsCarMoving] = React.useState(false);
 
+
     useEffect(() => {
         if (isCarMoving) {
             const timeoutId = setTimeout(() => {

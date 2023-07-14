@@ -1,7 +1,3 @@
-"use client";
-
-import { useState, useEffect } from "react";
-
 import Script from "next/script";
 
 import LoadingComponent from "@/components/internal/loading-component/loading.component";
@@ -20,13 +16,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    const [delay, setDelay] = useState(false);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setDelay(true);
-        }, 3000);
-    }, []);
 
     return (
         <html lang="en">
@@ -48,9 +37,7 @@ export default function RootLayout({ children }) {
                         {children}
                     </div>
                 </div>
-                <span className={delay ? "hidden" : "hidden"}>
-                    <Footer />
-                </span>
+                <Footer />
             </body>
         </html>
     );
