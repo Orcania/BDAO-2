@@ -38,9 +38,9 @@ export default function useRoadmap() {
     const renderContent = () => {
         switch (activeYear) {
             case 1:
-                return (
+                return (    
                     <div className="flex justify-center">
-                        <img className="invisible w-[596px]" src="/bg-images/road-year1.png" alt=""></img>
+                        <img className="invisible w-[596px] " src="/bg-images/road-year1.png" alt=""></img>
                     </div>
                 );
             case 2:
