@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = React.useState(null);
-    const carPositions = [125, 75, 70]; // Positions for Year 1, Year 2, Year 3
+    const carPositions = [70, 75, 70]; // Positions for Year 1, Year 2, Year 3
     const [currentCarPosition, setCurrentCarPosition] = React.useState(70);
     const [isCarMoving, setIsCarMoving] = React.useState(false);
 
@@ -21,7 +21,7 @@ export default function useRoadmap() {
     }, [isCarMoving]);
 
     useEffect(() => {
-        setCurrentCarPosition(125);
+        setCurrentCarPosition(75);
         setIsCarMoving(true);
     }, []);
 
@@ -76,7 +76,7 @@ export default function useRoadmap() {
             <div
                 className={`main ${activeYear === 1 ? "bg-road1" : ""} ${
                     activeYear === 2 ? "bg-road2" : ""
-                } ${activeYear === 3 ? "bg-road3" : ""} overflow-x-hidden`}
+                } ${activeYear === 3 ? "bg-road3" : ""} overflow-x-hidden min-[500px]:pb-0 pb-72`}
             >
                 <div className="">
                     <div className="roadmap-title fmb text-4xl sm:text-7xl text-center text-shadow mt-20 z-10">
@@ -135,7 +135,7 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 top-[120%] min-[680px]:top-[112%] items-center justify-center h-full flex flex- gap-24 min-[680px]:gap-36 ">
+                    <div className="absolute inset-0 top-[800px] min-[680px]:top-[112%] 2xl:top-[800p  items-center justify-center h-full flex flex- gap-24 min-[680px]:gap-36 ">
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
