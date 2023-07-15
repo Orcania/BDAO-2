@@ -13,7 +13,7 @@ export default function useRoadmap() {
         if (isCarMoving) {
             const timeoutId = setTimeout(() => {
                 setIsCarMoving(false);
-            },10000);
+            }, 10000);
             return () => {
                 clearTimeout(timeoutId);
             };
@@ -38,21 +38,33 @@ export default function useRoadmap() {
     const renderContent = () => {
         switch (activeYear) {
             case 1:
-                return (    
+                return (
                     <div className="flex justify-center">
-                        <img className="invisible w-[596px] " src="/bg-images/road-year1.png" alt=""></img>
+                        <img
+                            className="invisible w-[596px] "
+                            src="/bg-images/road-year1.png"
+                            alt=""
+                        ></img>
                     </div>
                 );
             case 2:
                 return (
                     <div className="flex justify-center">
-                        <img className="invisible w-[596px] " src="/bg-images/road-year2.png" alt=""></img>
+                        <img
+                            className="invisible w-[596px] "
+                            src="/bg-images/road-year2.png"
+                            alt=""
+                        ></img>
                     </div>
                 );
             case 3:
                 return (
                     <div className="flex justify-center">
-                        <img className="invisible w-[596px] " src="/bg-images/road-year3.png" alt=""></img>
+                        <img
+                            className="invisible w-[596px] "
+                            src="/bg-images/road-year3.png"
+                            alt=""
+                        ></img>
                     </div>
                 );
             default:
@@ -123,7 +135,7 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 items-center justify-center h-full flex flex-shrink gap-36 mt-[1500px]">
+                    <div className="absolute inset-0 top-[120%] min-[680px]:top-[112%] items-center justify-center h-full flex flex- gap-24 min-[680px]:gap-36 ">
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>

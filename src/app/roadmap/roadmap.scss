@@ -1,23 +1,57 @@
-.bg-road1 {
-    background-image: url("/bg-images/road-year1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center top;
+@media screen and (max-width: 680px) {
+    .bg-road1 {
+        background-image: url("/bg-images/road-year1.png");
+        background-repeat: no-repeat;
+        background-size: cover cover;
+        background-position: center top;
+    }
 }
 
-.bg-road2 {
-    background-image: url("/bg-images/road-year2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center top;
+@media screen and (min-width: 680px) {
+    .bg-road1 {
+        background-image: url("/bg-images/road-year1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
 }
 
-.bg-road3 {
-    background-image: url("/bg-images/road-year3.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center top;
+@media screen and (max-width: 680px) {
+    .bg-road2 {
+        background-image: url("/bg-images/road-year2.png");
+        background-repeat: no-repeat;
+        background-size: cover cover;
+        background-position: center top;
+    }
 }
+
+@media screen and (min-width: 680px) {
+    .bg-road2 {
+        background-image: url("/bg-images/road-year2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .bg-road3 {
+        background-image: url("/bg-images/road-year3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .bg-road3 {
+        background-image: url("/bg-images/road-year3.png");
+        background-repeat: no-repeat;
+        background-size: cover cover;
+        background-position: center top;
+    }
+}
+
 
 @media screen and (min-width: 1200px) {
     .bg-frame{
