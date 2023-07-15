@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import "./roadmap.scss";
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function useRoadmap() {
-    const [activeYear, setActiveYear] = React.useState(null);
-    const carPositions = [70, 75, 70]; // Positions for Year 1, Year 2, Year 3
-    const [currentCarPosition, setCurrentCarPosition] = React.useState(70);
-    const [isCarMoving, setIsCarMoving] = React.useState(false);
+    const [activeYear, setActiveYear] = useState(null);
+    const carPositions = [30, 30, 30]; // Positions for Year 1, Year 2, Year 3
+    const [currentCarPosition, setCurrentCarPosition] = useState(70);
+    const [isCarMoving, setIsCarMoving] = useState(false);
 
     useEffect(() => {
         if (isCarMoving) {
@@ -21,7 +21,7 @@ export default function useRoadmap() {
     }, [isCarMoving]);
 
     useEffect(() => {
-        setCurrentCarPosition(75);
+        setCurrentCarPosition(35);
         setIsCarMoving(true);
     }, []);
 
@@ -120,9 +120,8 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     <br />
-                    {renderContent()}
                     <div
-                        className="absolute inset-0 flex items-start justify-center h-full "
+                        className="absolute inset-0  flex items-start justify-center h-[200px]"
                         style={{
                             top: `${currentCarPosition}%`,
                             transition: isCarMoving ? "top 7s" : "none",
@@ -130,15 +129,15 @@ export default function useRoadmap() {
                     >
                         <div className="relative">
                             {/* Car */}
-                            <div></div>
                             <img src="/car.png" className={`car mr-64 `} alt="Car" size={30} />
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 top-[800px] min-[680px]:top-[112%] 2xl:top-[800p  items-center justify-center h-full flex flex- gap-24 min-[680px]:gap-36 ">
+                    <div className="absolute inset-0 top-[830px] h-[100px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
+                    {renderContent()}
                 </div>
             </div>
         </>
