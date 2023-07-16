@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = useState(null);
-    const carPositions = [30, 30, 30]; // Positions for Year 1, Year 2, Year 3
+    const carPositions = [0, 0, 0]; // Positions for Year 1, Year 2, Year 3
     const [currentCarPosition, setCurrentCarPosition] = useState(70);
     const [isCarMoving, setIsCarMoving] = useState(false);
 
@@ -21,7 +21,7 @@ export default function useRoadmap() {
     }, [isCarMoving]);
 
     useEffect(() => {
-        setCurrentCarPosition(35);
+        setCurrentCarPosition(0);
         setIsCarMoving(true);
     }, []);
 
@@ -121,11 +121,13 @@ export default function useRoadmap() {
                     </div>
                     <br />
                     <div
-                        className="absolute inset-0  flex items-start justify-center h-[200px]"
+                        className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
+                        /*
                         style={{
                             top: `${currentCarPosition}%`,
                             transition: isCarMoving ? "top 7s" : "none",
                         }}
+                        */
                     >
                         <div className="relative">
                             {/* Car */}
@@ -133,7 +135,7 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 top-[830px] h-[100px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
