@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = useState(null);
-    const carPositions = [0, 0, 0]; // Positions for Year 1, Year 2, Year 3
-    const [currentCarPosition, setCurrentCarPosition] = useState(70);
+    // const carPositions = [0, 0, 0]; // Positions for Year 1, Year 2, Year 3
+    // const [currentCarPosition, setCurrentCarPosition] = useState(70);
     const [isCarMoving, setIsCarMoving] = useState(false);
 
     useEffect(() => {
@@ -21,7 +21,7 @@ export default function useRoadmap() {
     }, [isCarMoving]);
 
     useEffect(() => {
-        setCurrentCarPosition(0);
+        // setCurrentCarPosition(0);
         setIsCarMoving(true);
     }, []);
 
@@ -31,8 +31,8 @@ export default function useRoadmap() {
 
     const handleYearClick = (year) => {
         setActiveYear(year);
-        const newPosition = carPositions[year - 1]; // Get the position for the selected year
-        setCurrentCarPosition(newPosition);
+        // const newPosition = carPositions[year - 1]; // Get the position for the selected year
+        // setCurrentCarPosition(newPosition);
     };
 
     const renderContent = () => {
