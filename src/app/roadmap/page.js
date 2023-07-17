@@ -118,7 +118,7 @@ export default function useRoadmap() {
                         ROADMAP
                     </div>
                     <div className="md:mt-[120px] mt-[130px]">
-                        <div className="flex justify-center md:gap-6 gap-4 py-4 mx-10 ">
+                        <div className="flex justify-center md:gap-6 gap-4 py-4 mx-5 text-sm md:text-xs ">
                             <button
                                 className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
                                     activeYear === 1 ? "active" : ""
