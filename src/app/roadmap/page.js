@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = useState(null);
-    const carPositions = [500, 150, 100]; // Positions for Year 1, Year 2, Year 3
+    const carPositions = [680, 430, 200]; // Positions for Year 1, Year 2, Year 3
     const [currentCarPosition, setCurrentCarPosition] = useState();
     const [isCarMoving, setIsCarMoving] = useState(false);
 
@@ -126,7 +126,7 @@ export default function useRoadmap() {
                             
                             style={{
                                 transform: `translateY(${currentCarPosition}px)`,
-                                transition: isCarMoving ? "transform 2s" : "none",
+                                transition: isCarMoving ? "transform 5s" : "none",
                               }}
                             
                         >
@@ -136,7 +136,7 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] mt-[1000px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] mt-[870px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
