@@ -5,23 +5,24 @@ import { useEffect, useState } from "react";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = useState(null);
-    // const carPositions = [0, 0, 0]; // Positions for Year 1, Year 2, Year 3
-    // const [currentCarPosition, setCurrentCarPosition] = useState(70);
+    const carPositions = [500, 150, 100]; // Positions for Year 1, Year 2, Year 3
+    const [currentCarPosition, setCurrentCarPosition] = useState();
     const [isCarMoving, setIsCarMoving] = useState(false);
 
     useEffect(() => {
         if (isCarMoving) {
-            const timeoutId = setTimeout(() => {
-                setIsCarMoving(false);
-            }, 10000);
-            return () => {
-                clearTimeout(timeoutId);
-            };
+          setCurrentCarPosition(carPositions[activeYear - 1]);
+          const timeoutId = setTimeout(() => {
+            setIsCarMoving(false);
+          }, 7000);
+          return () => {
+            clearTimeout(timeoutId);
+          };
         }
-    }, [isCarMoving]);
+      }, [isCarMoving, activeYear]);
 
     useEffect(() => {
-        // setCurrentCarPosition(0);
+        setCurrentCarPosition(70);
         setIsCarMoving(true);
     }, []);
 
@@ -31,8 +32,8 @@ export default function useRoadmap() {
 
     const handleYearClick = (year) => {
         setActiveYear(year);
-        // const newPosition = carPositions[year - 1]; // Get the position for the selected year
-        // setCurrentCarPosition(newPosition);
+        const newPosition = carPositions[year - 1]; // Get the position for the selected year
+        setCurrentCarPosition(newPosition);
     };
 
     const renderContent = () => {
@@ -120,22 +121,22 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     <br />
-                    <div
-                        className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
-                        /*
-                        style={{
-                            top: `${currentCarPosition}%`,
-                            transition: isCarMoving ? "top 7s" : "none",
-                        }}
-                        */
-                    >
+                        <div
+                            className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
+                            
+                            style={{
+                                transform: `translateY(${currentCarPosition}px)`,
+                                transition: isCarMoving ? "transform 2s" : "none",
+                              }}
+                            
+                        >
                         <div className="relative">
                             {/* Car */}
                             <img src="/car.png" className={`car mr-64 `} alt="Car" size={30} />
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] mt-[1000px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
