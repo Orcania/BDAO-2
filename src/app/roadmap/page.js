@@ -50,18 +50,17 @@ export default function useRoadmap() {
     useEffect(() => {
         // Update car position on window resize
         const handleResize = () => {
-          setCurrentCarPosition(carPositions[`year${activeYear}`][getScreenSize()]);
+            setCurrentCarPosition(carPositions[`year${activeYear}`][getScreenSize()]);
         };
-    
-        window.addEventListener("resize", handleResize);
-    
-        return () => {
-          window.removeEventListener("resize", handleResize);
-        };
-      }, [activeYear, carPositions]);
-    
-      const handleYearClick = (year) => {
 
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, [activeYear, carPositions]);
+
+    const handleYearClick = (year) => {
         setIsCarMoving(false); // Stop car animation
         setCurrentCarPosition(carPositions[`year${year}`][getScreenSize()]); // Update car position
         setIsCarMoving(true); // Start car animation
@@ -77,14 +76,14 @@ export default function useRoadmap() {
             return "desktop";
         }
     };
-    
+
     const renderContent = () => {
         switch (activeYear) {
             case 1:
                 return (
                     <div className="flex justify-center">
                         <img
-                            className="invisible w-[596px]"
+                            className="invisible "
                             src="/bg-images/road-year1.png"
                             alt=""
                         ></img>
@@ -93,21 +92,13 @@ export default function useRoadmap() {
             case 2:
                 return (
                     <div className="flex justify-center">
-                        <img
-                            className="invisible w-[596px]"
-                            src="/bg-images/road-year2.png"
-                            alt=""
-                        ></img>
+                        <img className="invisible" src="/bg-images/road-year2.png" alt=""></img>
                     </div>
                 );
             case 3:
                 return (
                     <div className="flex justify-center">
-                        <img
-                            className="invisible w-[596px]"
-                            src="/bg-images/road-year3.png"
-                            alt=""
-                        ></img>
+                        <img className="invisible" src="/bg-images/road-year3.png" alt=""></img>
                     </div>
                 );
             default:
@@ -123,11 +114,11 @@ export default function useRoadmap() {
                 } ${activeYear === 3 ? "bg-road3" : ""} overflow-x-hidden min-[500px]:pb-0 pb-72`}
             >
                 <div className="">
-                    <div className="roadmap-title fmb text-4xl sm:text-7xl text-center text-shadow mt-20 z-10">
+                    <div className="roadmap-title fmb text-5xl sm:text-7xl text-center text-shadow md:mt-16 mt-20 z-10">
                         ROADMAP
                     </div>
-                    <div className="mt-[140px]">
-                        <div className="flex justify-center md:gap-6 gap-4 py-4 px-4 mx-10 ">
+                    <div className="md:mt-[120px] mt-[130px]">
+                        <div className="flex justify-center md:gap-6 gap-4 py-4 mx-10 ">
                             <button
                                 className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
                                     activeYear === 1 ? "active" : ""
@@ -165,29 +156,24 @@ export default function useRoadmap() {
                     </div>
                     <br />
                     {activeYear === 1 && (
-          <>
-            <div
-              className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
-              style={{
-                transform: `translateY(${currentCarPosition}px)`,
-                transition: isCarMoving ? "transform 5s" : "none",
-              }}
-            >
-              <div className="relative">
-                <img
-                  src="/car.png"
-                  className="car mr-64"
-                  alt="Car"
-                  size={30}
-                />
-              </div>
-            </div>
-            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[870px] mt-[800px]  min-[680px]:mt-[900px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
-              <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
-              <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
-            </div>
-          </>
-        )}
+                        <>
+                            <div
+                                className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
+                                style={{
+                                    transform: `translateY(${currentCarPosition}px)`,
+                                    transition: isCarMoving ? "transform 5s" : "none",
+                                }}
+                            >
+                                <div className="relative">
+                                    <img src="/car.png" className="car mr-64" alt="Car" size={30} />
+                                </div>
+                            </div>
+                            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[870px] mt-[800px]  min-[680px]:mt-[900px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                                <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
+                                <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
+                            </div>
+                        </>
+                    )}
                     {renderContent()}
                 </div>
             </div>
