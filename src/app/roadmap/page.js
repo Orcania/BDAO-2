@@ -69,14 +69,14 @@ export default function useRoadmap() {
     };
 
     const getScreenSize = () => {
-        if (window.innerWidth <= 699) {
-          return "mobile";
+        if (window.innerWidth <= 690) {
+            return "mobile";
         } else if (window.innerWidth <= 1024) {
-          return "tablet";
+            return "tablet";
         } else {
-          return "desktop";
+            return "desktop";
         }
-      };
+    };
     
     const renderContent = () => {
         switch (activeYear) {
@@ -127,7 +127,7 @@ export default function useRoadmap() {
                         ROADMAP
                     </div>
                     <div className="mt-[140px]">
-                        <div className="flex justify-center gap-6 py-4">
+                        <div className="flex justify-center md:gap-6 gap-4 py-4 px-4 mx-10 ">
                             <button
                                 className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
                                     activeYear === 1 ? "active" : ""
@@ -177,7 +177,7 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[870px] mt-[800px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[870px] mt-[800px]  sm:mt-[850px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
