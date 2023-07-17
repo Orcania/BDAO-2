@@ -11,8 +11,8 @@ export default function useRoadmap() {
     const carPositions = {
         year1: {
             desktop: 690,
-            tablet: 590,
-            mobile: 590,
+            tablet: 690,
+            mobile: 620,
         },
         year2: {
             desktop: 430,
@@ -47,12 +47,26 @@ export default function useRoadmap() {
         setActiveYear(1);
     }, []);
 
-    const handleYearClick = (year) => {
-        setActiveYear(year);
-        const screenSize = getScreenSize();
-        const newPosition = carPositions[`year${year}`][screenSize];
-        setCurrentCarPosition(newPosition);
-      };
+    useEffect(() => {
+        // Update car position on window resize
+        const handleResize = () => {
+          setCurrentCarPosition(carPositions[`year${activeYear}`][getScreenSize()]);
+        };
+    
+        window.addEventListener("resize", handleResize);
+    
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, [activeYear, carPositions]);
+    
+      const handleYearClick = (year) => {
+
+        setIsCarMoving(false); // Stop car animation
+        setCurrentCarPosition(carPositions[`year${year}`][getScreenSize()]); // Update car position
+        setIsCarMoving(true); // Start car animation
+        setActiveYear(year); // Set active year
+    };
 
     const getScreenSize = () => {
         if (window.innerWidth <= 699) {
