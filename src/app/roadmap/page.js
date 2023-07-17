@@ -5,21 +5,38 @@ import { useEffect, useState } from "react";
 
 export default function useRoadmap() {
     const [activeYear, setActiveYear] = useState(null);
-    const carPositions = [680, 430, 200]; // Positions for Year 1, Year 2, Year 3
     const [currentCarPosition, setCurrentCarPosition] = useState();
     const [isCarMoving, setIsCarMoving] = useState(false);
 
+    const carPositions = {
+        year1: {
+            desktop: 690,
+            tablet: 590,
+            mobile: 590,
+        },
+        year2: {
+            desktop: 430,
+            tablet: 430,
+            mobile: 430,
+        },
+        year3: {
+            desktop: 220,
+            tablet: 220,
+            mobile: 220,
+        },
+    };
+
     useEffect(() => {
         if (isCarMoving) {
-          setCurrentCarPosition(carPositions[activeYear - 1]);
-          const timeoutId = setTimeout(() => {
-            setIsCarMoving(false);
-          }, 7000);
-          return () => {
-            clearTimeout(timeoutId);
-          };
+            setCurrentCarPosition(carPositions[`year${activeYear}`][getScreenSize()]);
+            const timeoutId = setTimeout(() => {
+                setIsCarMoving(false);
+            }, 7000);
+            return () => {
+                clearTimeout(timeoutId);
+            };
         }
-      }, [isCarMoving, activeYear]);
+    }, [isCarMoving, activeYear]);
 
     useEffect(() => {
         setCurrentCarPosition(70);
@@ -32,17 +49,28 @@ export default function useRoadmap() {
 
     const handleYearClick = (year) => {
         setActiveYear(year);
-        const newPosition = carPositions[year - 1]; // Get the position for the selected year
+        const screenSize = getScreenSize();
+        const newPosition = carPositions[`year${year}`][screenSize];
         setCurrentCarPosition(newPosition);
-    };
+      };
 
+    const getScreenSize = () => {
+        if (window.innerWidth <= 699) {
+          return "mobile";
+        } else if (window.innerWidth <= 1024) {
+          return "tablet";
+        } else {
+          return "desktop";
+        }
+      };
+    
     const renderContent = () => {
         switch (activeYear) {
             case 1:
                 return (
                     <div className="flex justify-center">
                         <img
-                            className="invisible w-[596px] "
+                            className="invisible w-[596px]"
                             src="/bg-images/road-year1.png"
                             alt=""
                         ></img>
@@ -52,7 +80,7 @@ export default function useRoadmap() {
                 return (
                     <div className="flex justify-center">
                         <img
-                            className="invisible w-[596px] "
+                            className="invisible w-[596px]"
                             src="/bg-images/road-year2.png"
                             alt=""
                         ></img>
@@ -62,7 +90,7 @@ export default function useRoadmap() {
                 return (
                     <div className="flex justify-center">
                         <img
-                            className="invisible w-[596px] "
+                            className="invisible w-[596px]"
                             src="/bg-images/road-year3.png"
                             alt=""
                         ></img>
@@ -72,6 +100,7 @@ export default function useRoadmap() {
                 return null;
         }
     };
+
     return (
         <>
             <div
@@ -121,15 +150,13 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     <br />
-                        <div
-                            className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
-                            
-                            style={{
-                                transform: `translateY(${currentCarPosition}px)`,
-                                transition: isCarMoving ? "transform 5s" : "none",
-                              }}
-                            
-                        >
+                    <div
+                        className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
+                        style={{
+                            transform: `translateY(${currentCarPosition}px)`,
+                            transition: isCarMoving ? "transform 5s" : "none",
+                        }}
+                    >
                         <div className="relative">
                             {/* Car */}
                             <img src="/car.png" className={`car mr-64 `} alt="Car" size={30} />
