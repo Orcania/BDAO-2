@@ -136,7 +136,7 @@ export default function useRoadmap() {
                         </div>
                     </div>
                     {/* Images */}
-                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] mt-[870px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                    <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[870px] mt-[800px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                         <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                         <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                     </div>
