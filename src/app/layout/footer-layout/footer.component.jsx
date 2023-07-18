@@ -46,8 +46,8 @@ export default function Footer() {
                     alt=""
                 />
 
-                <div className="socials absolute w-full  bottom-0 pb-2">
-                    <div className="flex justify-center items-center sm:justify-end sm:bottom-0 md:justify-end">
+                <div className="socials absolute w-full  bottom-0 pb-8 sm:pb-1 lg:pb-3">
+                    <div className="flex justify-center items-center sm:justify-end md:justify-end ">
                         {/* <h1 className="font-medium text-[18] sm:text-[12px] md:text-[12px] lg:text-[14px] xl:text-[18px]">@2023 BrickLayer</h1> */}
                         <div
                             className="font-medium text[20px] flex gap-8 mr-6 2xl:mr-20"
