@@ -22,23 +22,33 @@ export default function Footer() {
                     ></Image>
                 </div>
 
+                {/* Desktop Image */}
                 <img
-                    className="sm:block hidden bg-[#DCDCDC] "
+                    className="hidden xl:block 2xl:block lg:block md:hidden sm:hidden bg-[#DCDCDC]"
                     style={{ width: "100%", height: "auto", maxHeight: "700px" }}
-                    src="/footer/walld.png"
+                    src="/footer/desktop-wall.png"
                     alt=""
-                ></img>
+                />
 
-                <Image
-                    className="sm:hidden block bg-[#DCDCDC]"
-                    width={768}
-                    height={50}
-                    src="/footer/wallm.png"
+                {/* Tablet Image */}
+                <img
+                    className="hidden md:block sm:block xl:hidden 2xl:hidden lg:hidden bg-[#DCDCDC]"
+                    style={{ width: "100%", height: "auto", maxHeight: "700px" }}
+                    src="/footer/tablet-wall.png"
                     alt=""
-                ></Image>
+                />
+
+                {/* Mobile Image */}
+                <img
+                    className="block sm:hidden md:hidden bg-[#DCDCDC]"
+                    style={{ width: "100%", height: "auto", maxHeight: "700px" }}
+                    src="/footer/mobile-wall.png"
+                    alt=""
+                />
+
                 <div className="socials absolute w-full  bottom-0 pb-2">
-                    <div className="flex justify-between items-center">
-                        <h1 className="font-medium text-[18] sm:text-[12px] md:text-[12px] lg:text-[14px] xl:text-[18px]">@2023 BrickLayer</h1>
+                    <div className="flex justify-center items-center md:justify-end">
+                        {/* <h1 className="font-medium text-[18] sm:text-[12px] md:text-[12px] lg:text-[14px] xl:text-[18px]">@2023 BrickLayer</h1> */}
                         <div
                             className="font-medium text[20px] flex gap-8 mr-6 2xl:mr-20"
                             style={{ alignItems: "center" }}
