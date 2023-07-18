@@ -10,9 +10,9 @@ export default function useRoadmap() {
 
     const carPositions = {
         year1: {
-            desktop: 690,
-            tablet: 690,
-            mobile: 620,
+            desktop: 230,
+            tablet: 230,
+            mobile: 230,
         },
         year2: {
             desktop: 430,
@@ -168,7 +168,7 @@ export default function useRoadmap() {
                                     <img src="/car.png" className="car mr-64" alt="Car" size={30} />
                                 </div>
                             </div>
-                            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[850px] mt-[800px]  min-[680px]:mt-[900px] items-center justify-center mr-60 flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[300px] mt-[300px]  min-[680px]:mt-[900px] items-center justify-center mr-60 flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                                 <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                             </div>
                         </>
