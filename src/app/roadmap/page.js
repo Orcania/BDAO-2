@@ -81,7 +81,7 @@ export default function useRoadmap() {
         switch (activeYear) {
             case 1:
                 return (
-                    <div className="flex justify-center min-[680px]:w-[579px]">
+                    <div className="flex justify-center min-[680px]:w-[580px]">
                         <img
                             className="invisible "
                             src="/bg-images/road-year1.png"
