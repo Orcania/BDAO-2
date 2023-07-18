@@ -81,7 +81,7 @@ export default function useRoadmap() {
         switch (activeYear) {
             case 1:
                 return (
-                    <div className="flex justify-center">
+                    <div className="flex justify-center min-[680px]:w-[580px]">
                         <img
                             className="invisible "
                             src="/bg-images/road-year1.png"
@@ -114,10 +114,10 @@ export default function useRoadmap() {
                 } ${activeYear === 3 ? "bg-road3" : ""} overflow-x-hidden min-[500px]:pb-0 pb-72`}
             >
                 <div className="">
-                    <div className="roadmap-title fmb text-5xl sm:text-7xl text-center text-shadow md:mt-16 mt-20 z-10">
+                    <div className="roadmap-title fmb text-5xl sm:text-7xl text-center text-shadow md:mt-22 mt-20 z-10">
                         ROADMAP
                     </div>
-                    <div className="md:mt-[120px] mt-[130px]">
+                    <div className="md:mt-[140px] mt-[130px]">
                         <div className="flex justify-center md:gap-6 gap-4 py-4 mx-5 text-sm md:text-xs ">
                             <button
                                 className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
@@ -168,7 +168,7 @@ export default function useRoadmap() {
                                     <img src="/car.png" className="car mr-64" alt="Car" size={30} />
                                 </div>
                             </div>
-                            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[870px] mt-[800px]  min-[680px]:mt-[900px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[850px] mt-[800px]  min-[680px]:mt-[900px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                                 <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                                 <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                             </div>
