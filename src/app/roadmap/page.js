@@ -168,9 +168,8 @@ export default function useRoadmap() {
                                     <img src="/car.png" className="car mr-64" alt="Car" size={30} />
                                 </div>
                             </div>
-                            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[850px] mt-[800px]  min-[680px]:mt-[900px] items-center justify-center flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[850px] mt-[800px]  min-[680px]:mt-[900px] items-center justify-center mr-60 flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                                 <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
-                                <img src="/traffic-barrier-2.png" alt="Traffic Barrier 2" />
                             </div>
                         </>
                     )}
