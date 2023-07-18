@@ -37,10 +37,10 @@ export default function Footer() {
                     alt=""
                 ></Image>
                 <div className="socials absolute w-full  bottom-0 pb-2">
-                    <div className="flex justify-between items-center px-5 gap-20">
+                    <div className="flex justify-between items-center">
                         <h1 className="font-medium text-[18] sm:text-[12px] md:text-[12px] lg:text-[14px] xl:text-[18px]">@2023 BrickLayer</h1>
                         <div
-                            className="font-medium text[20px] flex "
+                            className="font-medium text[20px] flex gap-8 mr-6"
                             style={{ alignItems: "center" }}
                         >
                             <a
@@ -49,7 +49,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                             >
                                 <Image
-                                    className="mr-6"
+                                    className=""
                                     width={20}
                                     height={20}
                                     alt=""
@@ -62,7 +62,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                             >
                                 <Image
-                                    className="mr-6"
+                                    className=""
                                     width={20}
                                     height={20}
                                     alt=""
