@@ -2,7 +2,7 @@
     .bg-road1 {
         background-image: url("/bg-images/road-year1.png");
         background-repeat: no-repeat;
-        background-size: cover cover;
+        background-size: cover;
         background-position: center top;
     }
 }
@@ -20,7 +20,7 @@
     .bg-road2 {
         background-image: url("/bg-images/road-year2.png");
         background-repeat: no-repeat;
-        background-size: cover cover;
+        background-size: cover;
         background-position: center top;
     }
 }
@@ -47,17 +47,16 @@
     .bg-road3 {
         background-image: url("/bg-images/road-year3.png");
         background-repeat: no-repeat;
-        background-size: cover cover;
+        background-size: cover;
         background-position: center top;
     }
 }
-
 
 @media screen and (min-width: 1200px) {
     .bg-frame{
         background-image: url('/bg-images/Frame_35.png');
         background-repeat: no-repeat;
-        background-size: cover cover;
+        background-size: cover;
         background-position: center top;
     }
 }
