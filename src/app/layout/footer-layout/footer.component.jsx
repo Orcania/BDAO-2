@@ -46,11 +46,11 @@ export default function Footer() {
                     alt=""
                 />
 
-                <div className="socials absolute w-full  bottom-0 pb-5 sm:pb-1 lg:pb-3">
+                <div className="socials absolute w-full  bottom-0 pb-5 sm:pb-1 lg:pb-2">
                     <div className="flex justify-center items-center sm:justify-end md:justify-end ">
                         {/* <h1 className="font-medium text-[18] sm:text-[12px] md:text-[12px] lg:text-[14px] xl:text-[18px]">@2023 BrickLayer</h1> */}
                         <div
-                            className="font-medium text[18px] flex gap-4 mr-5 2xl:mr-20"
+                            className="font-medium text[18px] md:text-[10px] sm:text-[10px] flex gap-4 mr-5 2xl:mr-20 "
                             style={{ alignItems: "center" }}
                         >
                             <a
