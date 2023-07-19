@@ -53,11 +53,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .bg-frame{
-        background-image: url('/bg-images/Frame_35.png');
+    .bg-frame {
+        background-image: url("/bg-images/Frame_35.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto, auto;
         background-position: center top;
+        
     }
 }
 
@@ -73,7 +74,7 @@
     backdrop-filter: blur(2px);
 }
 
-.text-shadow{
+.text-shadow {
     text-shadow: 0px 17px 26px rgba(0, 0, 0, 0.62);
 }
 
@@ -144,14 +145,14 @@
 ::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
     background: rgba(226, 110, 93, 0.3); /* Color of the scrollbar handle with opacity */
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #e26e5d; /* Color of the scrollbar handle */
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #e26e5d; /* Color of the scrollbar handle on hover */
-  }
+}
