@@ -50,7 +50,7 @@ export default function Footer() {
                     <div className="flex justify-center items-center sm:justify-end md:justify-end ">
                         {/* <h1 className="font-medium text-[18] sm:text-[12px] md:text-[12px] lg:text-[14px] xl:text-[18px]">@2023 BrickLayer</h1> */}
                         <div
-                            className="font-medium text[20px] flex gap-8 mr-6 2xl:mr-20"
+                            className="font-medium text[20px] flex gap-5 mr-6 2xl:mr-20"
                             style={{ alignItems: "center" }}
                         >
                             <a
@@ -90,6 +90,20 @@ export default function Footer() {
                                     height={20}
                                     alt=""
                                     src="/footer/twitter.svg"
+                                ></Image>
+                            </a>
+                            <a
+                                href="https://t.me/+tU7KlgQHnSk3ZWNk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    className=""
+                                    width={20}
+                                    height={20}
+                                    alt=""
+                                    src="/footer/M.svg"
+
                                 ></Image>
                             </a>
                         </div>
