@@ -161,7 +161,7 @@ export default function useRoadmap() {
                                 className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
                                 style={{
                                     transform: `translateY(${currentCarPosition}px)`,
-                                    transition: isCarMoving ? "transform 5s" : "none",
+                                    transition: isCarMoving ? "transform 7s" : "none",
                                 }}
                             >
                                 <div className="relative">
