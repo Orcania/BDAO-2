@@ -62,6 +62,14 @@
     }
 }
 
+/* Set a fixed background size and position for .bg-frame outside of any media queries */
+.bg-frame {
+    background-image: url("/bg-images/Frame_35.png");
+    background-repeat: no-repeat;
+    background-size: auto,cover;
+    background-position: center top;
+}
+
 .bg-footer {
     background-image: url("/photo_5100376236865203014_y-removebg-preview 2.png");
     background-size: contain;
