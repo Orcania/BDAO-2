@@ -81,7 +81,7 @@ export default function useRoadmap() {
         switch (activeYear) {
             case 1:
                 return (
-                    <div className="flex justify-center min-[680px]:w-[580px]">
+                    <div className="flex justify-center ">
                         <img
                             className="invisible "
                             src="/bg-images/road-year1.png"
@@ -117,7 +117,7 @@ export default function useRoadmap() {
                     <div className="roadmap-title fmb text-5xl sm:text-7xl text-center text-shadow sm:mt-20 mt-24 z-10">
                         ROADMAP
                     </div>
-                    <div className="sm:mt-[140px] mt-[160px]">
+                    <div className="sm:mt-[150px] mt-[160px]">
                         <div className="flex justify-center md:gap-6 gap-4 py-4 mx-5 text-sm md:text-xs ">
                             <button
                                 className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
