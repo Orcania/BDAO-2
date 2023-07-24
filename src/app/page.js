@@ -131,7 +131,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="absolute md:w-44 md:h-44 w-24 h-24 md:top-[-50px] top-[-20px] right-0 ">
-                                    <Image src="/brick.png" width={185} height={175} alt="" />
+                                    <Image src="/brick2.png" width={185} height={175} alt="" />
                                 </div>
                             </div>
                             <div
