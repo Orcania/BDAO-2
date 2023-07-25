@@ -18,8 +18,8 @@ export default function RootLayoutt({ children , className }) {
             <Script
                 src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
                 type="module"
-            />
-
+        />
+        {/* Deleted header     */}
             <div className="main-bg">
                 <div className="bg-frame">
                     <div>
