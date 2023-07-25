@@ -19,6 +19,7 @@ export default function RootLayoutt({ children , className }) {
                 src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
                 type="module"
             />
+            <Header />
 
             <div className="main-bg">
                 <div className="bg-frame">
