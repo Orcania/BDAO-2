@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-import Header from "../layout/header-layout";
+// import Header from "../layout/header-layout";
 
 import "../layout/header-layout/header.scss";
 import "@/scss/globals.scss";
