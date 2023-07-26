@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Ap() {
-    const [activeContent, setActiveContent] = useState("available");
+    const [activeContent, setActiveContent] = useState("existing");
 
     const handleExistingClick = () => {
         setActiveContent("existing");
@@ -38,24 +38,24 @@ export default function Ap() {
                 {/* Add buttons for switching content */}
                 <div className="flex w-full justify-start items-center gap-5">
                     <button
-                        className={`bg-[#E26E5D] border-3 border-white text-${
-                            activeContent === "available" ? "white" : "[#FEBA98]"
-                        }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
-                            activeContent === "available" ? "" : ""
-                        }`}
-                        onClick={handleAvailableClick}
-                    >
-                        Available
-                    </button>
-                    <button
-                        className={`bg-[#E26E5D] border-3 border-white text-${
-                            activeContent === "existing" ? "white" : "[#FEBA98]"
-                        }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
-                            activeContent === "existing" ? "" : ""
-                        }`}
+                    className={`bg-[#E26E5D] border-3 border-white ${
+                        activeContent === "existing" ? "text-white" : "text-[#FEBA98]"
+                    }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
+                        activeContent === "existing" ? "" : ""
+                    }`}
                         onClick={handleExistingClick}
                     >
                         Existing
+                    </button>
+                    <button
+                       className={`bg-[#E26E5D] border-3 border-white ${
+                        activeContent === "available" ? "text-white" : "text-[#FEBA98]"
+                    }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
+                        activeContent === "available" ? "" : ""
+                    }`}
+                        onClick={handleAvailableClick}
+                    >
+                        Available
                     </button>
                 </div>
 
