@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Ap() {
-    const [activeContent, setActiveContent] = useState("existing");
+    const [activeContent, setActiveContent] = useState("available");
 
     const handleExistingClick = () => {
         setActiveContent("existing");
