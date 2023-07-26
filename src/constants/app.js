@@ -1,4 +1,4 @@
-const ap = [
+export const ap = [
     {
         id: 0,
         image: () => {
@@ -44,7 +44,7 @@ const ap = [
                 ></model-viewer>
             );
         },
-        frame: '/media/models/frame.png',
+        frame: "/media/models/frame.png",
         title: "Blockchain Developer",
         text: "We are looking for a skilled developer who is comfortable with both front and back end technologies. As a lead, you will be responsible for web applications, periodic updates, technical advisory on implementation of DAO mechanics, building scalable APIs, on-boarding and evaluating developer partnerships",
     },
@@ -69,7 +69,7 @@ const ap = [
                 ></model-viewer>
             );
         },
-        frame: '/media/models/frame.png',
+        frame: "/media/models/frame.png",
         title: "Marketing Manager",
         text: "We are looking for a passionate crypto and blockchain ecosystems marketing expert to drive the DAO's marketing strategy and work closely with the Founders and Investor Relations Ap. This AP will effectuate programs to maximize the DAO's presence in the blockchain and real estate communities. Must be able to think creatively and act decisively",
     },
@@ -118,7 +118,7 @@ const ap = [
                 ></model-viewer>
             );
         },
-        frame: '/media/models/frame.png',
+        frame: "/media/models/frame.png",
         title: "AI Specialist",
         text: "We are seeking a highly skilled AI Specialist to join our dynamic team and play a pivotal role in shaping the future of real estate on the blockchain. Responsible for providing expert guidance and strategic insights to drive the successful implementation of AI technologies within our real estate projects on the blockchain. You will collaborate closely with cross-functional teams to analyze requirements, design AI solutions, and oversee their deployment.",
     },
@@ -143,10 +143,91 @@ const ap = [
                 ></model-viewer>
             );
         },
-        frame: '/media/models/frame.png',
+        frame: "/media/models/frame.png",
         title: "Accounting Manager",
         text: "We are looking for an experienced finance and accounting leader readily able to build accounting systems and operating procedures. Background in financial modeling and DeFi is essential.",
     },
 ];
 
-export default ap;
+export const available = [
+    {
+        profileLin: "www.google.com",
+        name: "Denis Leontievsky",
+        title: "COO",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Jorey Bernstein",
+        title: "Strategic Investor",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Edy Haddad",
+        title: "CTO",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Illy Leontievsky",
+        title: "CFO",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Edward Prescott",
+        title: "Investor Relations ",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Investor Relations",
+        title: "Marketing ",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Chris Tyrer",
+        title: "VA Consultancy",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Andy Sih",
+        title: "Fund Operator",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Tyler Healy",
+        title: "AI Consultancy",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Dan Whitmore",
+        title: "Real Estate (APAC)",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Matthew Hopkins",
+        title: "Real Estate (APAC)",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Paul Steele",
+        title: "Real Estate (APAC)",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "James Boothroyd",
+        title: "RE Asset Management",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Peter Ainscough",
+        title: "Real Estate AP (APAC)",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Nick Prescott",
+        title: "Real Estate (NA)",
+    },
+    {
+        profileLin: "www.google.com",
+        name: "Melvin Visser",
+        title: "Marketing",
+    },
+];
