@@ -1,4 +1,4 @@
-const ap = [
+export const ap = [
     {
         id: 0,
         image: () => {
@@ -44,7 +44,7 @@ const ap = [
                 ></model-viewer>
             );
         },
-        frame: '/media/models/frame.png',
+        frame: "/media/models/frame.png",
         title: "Blockchain Developer",
         text: "We are looking for a skilled developer who is comfortable with both front and back end technologies. As a lead, you will be responsible for web applications, periodic updates, technical advisory on implementation of DAO mechanics, building scalable APIs, on-boarding and evaluating developer partnerships",
     },
@@ -69,7 +69,7 @@ const ap = [
                 ></model-viewer>
             );
         },
-        frame: '/media/models/frame.png',
+        frame: "/media/models/frame.png",
         title: "Marketing Manager",
         text: "We are looking for a passionate crypto and blockchain ecosystems marketing expert to drive the DAO's marketing strategy and work closely with the Founders and Investor Relations Ap. This AP will effectuate programs to maximize the DAO's presence in the blockchain and real estate communities. Must be able to think creatively and act decisively",
     },
@@ -118,7 +118,7 @@ const ap = [
                 ></model-viewer>
             );
         },
-        frame: '/media/models/frame.png',
+        frame: "/media/models/frame.png",
         title: "AI Specialist",
         text: "We are seeking a highly skilled AI Specialist to join our dynamic team and play a pivotal role in shaping the future of real estate on the blockchain. Responsible for providing expert guidance and strategic insights to drive the successful implementation of AI technologies within our real estate projects on the blockchain. You will collaborate closely with cross-functional teams to analyze requirements, design AI solutions, and oversee their deployment.",
     },
@@ -143,10 +143,113 @@ const ap = [
                 ></model-viewer>
             );
         },
-        frame: '/media/models/frame.png',
+        frame: "/media/models/frame.png",
         title: "Accounting Manager",
         text: "We are looking for an experienced finance and accounting leader readily able to build accounting systems and operating procedures. Background in financial modeling and DeFi is essential.",
     },
 ];
 
-export default ap;
+export const available = [
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/leontievsky/",
+        name: "Denis Leontievsky",
+        title: "COO",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/joreybernstein/",
+        name: "Jorey Bernstein",
+        title: "Strategic Investor",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/edy-haddad-42725a211/",
+        name: "Edy Haddad",
+        title: "CTO",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/ilia-leontievsky/",
+        name: "Illy Leontievsky",
+        title: "CFO",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/edward-prescott-50b90b50/",
+        name: "Edward Prescott",
+        title: "Investor Relations ",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/rocketscience/",
+        name: "Mark Addison",
+        title: "Marketing ",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/chris-tyrer-78933a13a",
+        name: "Chris Tyrer",
+        title: "VA Consultancy",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/andrew-sih-85082a2b/",
+        name: "Andy Sih",
+        title: "Fund Operator",
+    },
+    {
+        img: "/media/models/discord.svg",
+        profileLink: "www.google.com",
+        name: "Tyler Healy",
+        title: "AI Consultancy",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/daniel-whitmore-58789919/",
+        name: "Dan Whitmore",
+        title: "Real Estate (APAC)",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/matthew-hopkins-73008118/ ",
+        name: "Matthew Hopkins",
+        title: "Real Estate (APAC)",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/paulsteele2/",
+        name: "Paul Steele",
+        title: "Real Estate (APAC)",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/adam-peacock-mrics-38bba929/",
+        name: "Adam Peacock",
+        title: "RE Estate (EMEA)",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/james-boothroyd-72014818/",
+        name: "James Boothroyd",
+        title: "RE Asset Management",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/peter-ainscough-8a252251/",
+        name: "Peter Ainscough",
+        title: "Real Estate AP (APAC)",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/nicholas-prescott-552b0614/",
+        name: "Nick Prescott",
+        title: "Real Estate (NA)",
+    },
+    {
+        img: "/media/models/linkedin.svg",
+        profileLink: "https://www.linkedin.com/in/melvinvisser/",
+        name: "Melvin Visser",
+        title: "Marketing",
+    },
+];
