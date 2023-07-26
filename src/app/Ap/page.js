@@ -39,7 +39,7 @@ export default function Ap() {
                 <div className="flex w-full justify-start items-center mb-8 gap-5">
                     <button
                         className={`bg-[#E26E5D] border-3 border-white text-${
-                            activeContent === "available" ? "white" : "[#FFF]"
+                            activeContent === "available" ? "white" : "[#FEBA98]"
                         }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
                             activeContent === "available" ? "" : ""
                         }`}
@@ -49,7 +49,7 @@ export default function Ap() {
                     </button>
                     <button
                         className={`bg-[#E26E5D] border-3 border-white text-${
-                            activeContent === "existing" ? "white" : "[#FFF]"
+                            activeContent === "existing" ? "white" : "[#FEBA98]"
                         }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
                             activeContent === "existing" ? "" : ""
                         }`}
@@ -115,7 +115,7 @@ export default function Ap() {
                                         // Render content for "Available" button
                                         // ...
                                         <div key={item.id}
-                                        className="flex flex-row gap-2 justify-start items-center bg-gray-200 bg-opacity-20 px-6 py-4 ">
+                                        className="flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4 ">
                                             <div className="flex items-start justify-end h-full mb-1 ">
                                                 <Link href={item.profileLink}><Image src={item.img} alt="" width={24} height={24}/></Link>
                                             </div>
