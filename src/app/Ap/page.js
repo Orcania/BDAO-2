@@ -92,7 +92,7 @@ export default function Ap() {
                             })}
                     </div>
                     {activeContent === "existing" && (
-                        <div className="flex flex-col justify-center items-center text-center gap-14 bg-[#E26E5D] bg-opacity-70 border-[10px] border-border-white ">
+                        <div className="flex flex-col justify-center items-center text-center gap-14 bg-[#E26E5D] bg-opacity-70 border-[10px] border-border-white bg-with-image">
                             <div className="">
                                 <h1 className="fmb text-2xl font-[400] leading-6 text-center mt-16">
                                     Active Participants
@@ -114,10 +114,19 @@ export default function Ap() {
                                     return (
                                         // Render content for "Available" button
                                         // ...
-                                        <div key={item.id}
-                                        className="flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4 ">
+                                        <div
+                                            key={item.id}
+                                            className="flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4 "
+                                        >
                                             <div className="flex items-start justify-end h-full mb-1 ">
-                                                <Link href={item.profileLink}><Image src={item.img} alt="" width={24} height={24}/></Link>
+                                                <Link href={item.profileLink}>
+                                                    <Image
+                                                        src={item.img}
+                                                        alt=""
+                                                        width={24}
+                                                        height={24}
+                                                    />
+                                                </Link>
                                             </div>
                                             <div className="flex flex-col items-start">
                                                 <h1 className="fmb text-[12px] font-normal">

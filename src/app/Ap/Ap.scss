@@ -36,3 +36,11 @@
         background-repeat: no-repeat;
     }
 }
+
+.bg-with-image {
+  background-image: url('/bg-images/OIP.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 5;
+}
