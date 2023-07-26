@@ -39,23 +39,23 @@ export default function Ap() {
                 <div className="flex w-full justify-start items-center mb-8 gap-5">
                     <button
                         className={`bg-[#E26E5D] border-3 border-white text-${
-                            activeContent === "existing" ? "white" : "[#FEBA98]"
-                        }  fmb p-3 w-32 text-sm sm:w-auto sm:text-base ${
-                            activeContent === "existing" ? "button3D-selected " : ""
-                        }`}
-                        onClick={handleExistingClick}
-                    >
-                        Existing
-                    </button>
-                    <button
-                        className={`bg-[#E26E5D] border-3 border-white text-${
                             activeContent === "available" ? "white" : "[#FEBA98]"
-                        }  fmb p-3 w-32 text-sm sm:w-auto sm:text-base ${
-                            activeContent === "available" ? "button3D-selected" : ""
+                        }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
+                            activeContent === "available" ? "" : ""
                         }`}
                         onClick={handleAvailableClick}
                     >
                         Available
+                    </button>
+                    <button
+                        className={`bg-[#E26E5D] border-3 border-white text-${
+                            activeContent === "existing" ? "white" : "[#FEBA98]"
+                        }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
+                            activeContent === "existing" ? "" : ""
+                        }`}
+                        onClick={handleExistingClick}
+                    >
+                        Existing
                     </button>
                 </div>
 
