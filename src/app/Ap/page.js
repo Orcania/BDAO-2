@@ -92,7 +92,7 @@ export default function Ap() {
                             })}
                     </div>
                     {activeContent === "existing" && (
-                        <div className="flex flex-col justify-center items-center text-center gap-14 bg-[#E26E5D] bg-opacity-70 border-[10px] border-border-white hover:border-[#a9a9a9]">
+                        <div className="flex flex-col justify-center items-center text-center gap-14 bg-[#E26E5D] bg-opacity-70 border-[10px] border-border-white ">
                             <div className="">
                                 <h1 className="fmb text-2xl font-[400] leading-6 text-center mt-16">
                                     Active Participants
