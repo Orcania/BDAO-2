@@ -224,12 +224,6 @@ export const available = [
     },
     {
         img: "/media/models/linkedin.svg",
-        profileLink: "https://www.linkedin.com/in/adam-peacock-mrics-38bba929/",
-        name: "Adam Peacock",
-        title: "RE Estate (EMEA)",
-    },
-    {
-        img: "/media/models/linkedin.svg",
         profileLink: "https://www.linkedin.com/in/james-boothroyd-72014818/",
         name: "James Boothroyd",
         title: "RE Asset Management",
