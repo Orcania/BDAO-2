@@ -36,7 +36,7 @@ export default function Ap() {
                 }}
             >
                 {/* Add buttons for switching content */}
-                <div className="flex w-full justify-start items-center mb-8 gap-5">
+                <div className="flex w-full justify-start items-center gap-5">
                     <button
                         className={`bg-[#E26E5D] border-3 border-white text-${
                             activeContent === "available" ? "white" : "[#FEBA98]"
@@ -92,7 +92,7 @@ export default function Ap() {
                             })}
                     </div>
                     {activeContent === "existing" && (
-                        <div className="flex flex-col justify-center items-center text-center gap-14 bg-[#E26E5D] bg-opacity-70 border-[10px] border-border-white bg-with-image">
+                        <div className="flex flex-col justify-center items-center text-center gap-14 bg-[#E26E5D] bg-opacity-70 border-[2px] border-border-white bg-with-image ">
                             <div className="">
                                 <h1 className="fmb text-2xl font-[400] leading-6 text-center mt-16">
                                     Active Participants
