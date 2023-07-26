@@ -38,21 +38,21 @@ export default function Ap() {
                 {/* Add buttons for switching content */}
                 <div className="flex w-full justify-start items-center gap-5">
                     <button
-                    className={`bg-[#E26E5D] border-3 border-white ${
-                        activeContent === "existing" ? "text-white" : "text-[#FEBA98]"
-                    }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
-                        activeContent === "existing" ? "" : ""
-                    }`}
+                        className={`bg-[#E26E5D] border-3 border-white ${
+                            activeContent === "existing" ? "text-white" : "text-[#FEBA98]"
+                        }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
+                            activeContent === "existing" ? "" : ""
+                        }`}
                         onClick={handleExistingClick}
                     >
                         Existing
                     </button>
                     <button
-                       className={`bg-[#E26E5D] border-3 border-white ${
-                        activeContent === "available" ? "text-white" : "text-[#FEBA98]"
-                    }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
-                        activeContent === "available" ? "" : ""
-                    }`}
+                        className={`bg-[#E26E5D] border-3 border-white ${
+                            activeContent === "available" ? "text-white" : "text-[#FEBA98]"
+                        }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
+                            activeContent === "available" ? "" : ""
+                        }`}
                         onClick={handleAvailableClick}
                     >
                         Available
@@ -152,7 +152,6 @@ export default function Ap() {
                             marginBottom: "20px",
                         }}
                     >
-                        {" "}
                         <h1 className="fmb sm:text-[24px] text-[19px]">Interested?</h1>
                     </div>
                     <div className="flex md:order-2 md:flex-1 md:justify-end">
