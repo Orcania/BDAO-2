@@ -39,7 +39,7 @@ export default function Ap() {
                 <div className="flex w-full justify-start items-center mb-8 gap-5">
                     <button
                         className={`bg-[#E26E5D] border-3 border-white text-${
-                            activeContent === "available" ? "white" : "[#FEBA98]"
+                            activeContent === "available" ? "white" : "[#FFF]"
                         }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
                             activeContent === "available" ? "" : ""
                         }`}
@@ -49,7 +49,7 @@ export default function Ap() {
                     </button>
                     <button
                         className={`bg-[#E26E5D] border-3 border-white text-${
-                            activeContent === "existing" ? "white" : "[#FEBA98]"
+                            activeContent === "existing" ? "white" : "[#FFF]"
                         }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
                             activeContent === "existing" ? "" : ""
                         }`}
