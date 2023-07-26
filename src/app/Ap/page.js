@@ -115,7 +115,7 @@ export default function Ap() {
                                         // Render content for "Available" button
                                         // ...
                                         <div key={item.id}
-                                        className="flex flex-row gap-2 justify-start items-center bg-gray-200 bg-opacity-20 px-6 py-4 ">
+                                        className="flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4 ">
                                             <div className="flex items-start justify-end h-full mb-1 ">
                                                 <Link href={item.profileLink}><Image src={item.img} alt="" width={24} height={24}/></Link>
                                             </div>
