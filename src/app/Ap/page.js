@@ -114,7 +114,7 @@ export default function Ap() {
                                         // ...
                                         <div className="flex flex-row gap-2 justify-start items-center bg-gray-200 bg-opacity-20 px-6 py-4 ">
                                             <div className="flex items-start justify-end h-full mb-1 ">
-                                                <Link href=''><Image src="/media/models/linkedin.svg" width={24} height={24}/></Link>
+                                                <Link href={item.profileLink}><Image src={item.img} width={24} height={24}/></Link>
                                             </div>
                                             <div className="flex flex-col items-start">
                                                 <h1 className="fmb text-[12px] font-normal">
