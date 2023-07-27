@@ -109,37 +109,39 @@ export default function Ap() {
                                     in and reviewed annually by the DAO.
                                 </p>
                             </div>
-                            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 m-5 pb-20">
-                                {available.map((item) => {
-                                    return (
-                                        // Render content for "Available" button
-                                        // ...
-                                        <div
+                            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 m-5 pb-20 ">
+                                     {available.map((item) => {
+                                        return (
+                                            // Render content for "Available" button
+                                            // ...
+                                            <div
                                             key={item.id}
-                                            className="flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4 "
+                                            className={`flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4 ${
+                                                item.id === 16 ? 'centering classes' : ''
+                                            }`}
                                         >
-                                            <div className="flex items-start justify-end h-full mb-1 ">
-                                                <Link href={item.profileLink}>
-                                                    <Image
-                                                        src={item.img}
-                                                        alt=""
-                                                        width={24}
-                                                        height={24}
-                                                    />
-                                                </Link>
+                                                <div className="flex items-start justify-end h-full mb-1 ">
+                                                    <Link href={item.profileLink}>
+                                                        <Image
+                                                            src={item.img}
+                                                            alt=""
+                                                            width={24}
+                                                            height={24}
+                                                        />
+                                                    </Link>
+                                                </div>
+                                                <div className="flex flex-col items-start">
+                                                    <h1 className="fmb text-[12px] font-normal">
+                                                        {item.name}
+                                                    </h1>
+                                                    <h1 className="text-[#FFD3C8] text-[12px] font-semibold">
+                                                        {item.title}
+                                                    </h1>
+                                                </div>
                                             </div>
-                                            <div className="flex flex-col items-start">
-                                                <h1 className="fmb text-[12px] font-normal">
-                                                    {item.name}
-                                                </h1>
-                                                <h1 className="text-[#FFD3C8] text-[12px] font-semibold">
-                                                    {item.title}
-                                                </h1>
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
+                                        );
+                                    })}
+                                </div>
                         </div>
                     )}
                 </div>
