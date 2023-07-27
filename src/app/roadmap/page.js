@@ -10,9 +10,9 @@ export default function useRoadmap() {
 
     const carPositions = {
         year1: {
-            desktop: 230,
-            tablet: 230,
-            mobile: 230,
+            desktop: 5,
+            tablet: 70,
+            mobile: 70,
         },
         year2: {
             desktop: 430,
@@ -39,7 +39,7 @@ export default function useRoadmap() {
     }, [isCarMoving, activeYear]);
 
     useEffect(() => {
-        setCurrentCarPosition(70);
+        setCurrentCarPosition(10    );
         setIsCarMoving(true);
     }, []);
 
@@ -117,8 +117,8 @@ export default function useRoadmap() {
                     <div className="roadmap-title fmb text-5xl sm:text-7xl text-center text-shadow sm:mt-12 mt-[50px] z-10">
                         ROADMAP
                     </div>
-                    <div className="sm:mt-[80px] mt-[125px]">
-                        <div className="flex justify-center md:gap-6 gap-4 py-4 mx-5 text-sm md:text-xs ">
+                    <div className="sm:mt-[80px] mt-[60px]">
+                        <div className="flex justify-center md:gap-6 gap-4 py-4 mx-5 text-[10px] md:text-xs ">
                             <button
                                 className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
                                     activeYear === 1 ? "active" : ""
@@ -158,7 +158,7 @@ export default function useRoadmap() {
                     {activeYear === 1 && (
                         <>
                             <div
-                                className="absolute inset-0 min-[680px]:top-[620px] top-[510px] flex items-start justify-center h-[200px]"
+                                className="absolute inset-0 min-[680px]:top-[450px] top-[280px] flex items-start justify-center h-[200px]"
                                 style={{
                                     transform: `translateY(${currentCarPosition}px)`,
                                     transition: isCarMoving ? "transform 7s" : "none",
@@ -168,7 +168,7 @@ export default function useRoadmap() {
                                     <img src="/car.png" className="car mr-64" alt="Car" size={30} />
                                 </div>
                             </div>
-                            <div className="absolute inset-0 min-[680px]:top-[830px] top-[700px] h-[100px] md:mt-[300px] mt-[300px]  min-[680px]:mt-[900px] items-center justify-center mr-60 flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                            <div className="absolute inset-0 min-[680px]:top-[400px] top-[400px] h-[100px] md:mt-[300px] mt-[300px]  min-[680px]:mt-[900px] items-center justify-center mr-60 flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                                 <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                             </div>
                         </>
