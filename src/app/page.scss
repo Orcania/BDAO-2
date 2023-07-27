@@ -1,15 +1,15 @@
 ::-webkit-scrollbar {
     width: 8px; /* Width of the scrollbar */
     background: rgba(236, 110, 93, 0.3); /* Color of the scrollbar handle with opacity */
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #e26e5d; /* Color of the scrollbar handle */
     border-radius: 3px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #e26e5d; /* Color of the scrollbar handle on hover */
-  }
+}

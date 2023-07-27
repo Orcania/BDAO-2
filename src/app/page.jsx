@@ -4,7 +4,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Image from "next/image";
-import "./page.scss";
 import "../scss/globals.scss";
 
 export default function Home() {

@@ -68,7 +68,6 @@ export default function Treasury() {
             price: "$15,000",
             holdings: 100,
         },
-
     ];
 
     return (
@@ -98,7 +97,7 @@ export default function Treasury() {
                         <div
                             key={index}
                             className="flex justify-center items-center bg-[#E78A74] py-5 text-[14px] font-semibold"
-                            style={{borderRadius:'5px', background:'rgba(231, 138, 116, 0.15)'}}
+                            style={{ borderRadius: "5px", background: "rgba(231, 138, 116, 0.15)" }}
                         >
                             <div className="flex-1 flex justify-start items-center gap-20">
                                 <h1 className="ml-5 text-start">{index + 1}</h1>
