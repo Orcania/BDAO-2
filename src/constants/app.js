@@ -200,7 +200,7 @@ export const available = [
     },
     {
         img: "/media/models/discord.svg",
-        profileLink: "www.google.com",
+        profileLink: "@h4wkins",
         name: "Tyler Healy",
         title: "AI Consultancy",
     },

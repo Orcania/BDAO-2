@@ -19,7 +19,10 @@ export default function Ap() {
         setActiveContent("available");
     };
 
-    const handleCopyLink = (link) => {
+    const handleCopyLink = (link, event) => {
+        // Prevent navigation to the link
+        event.preventDefault();
+
         // Copy the link to the clipboard
         navigator.clipboard.writeText(link).then(() => {
             setCopiedLink(link);
@@ -110,7 +113,7 @@ export default function Ap() {
                                 </h1>
                             </div>
                             <div className="w-[85%]">
-                                <p className="text-base font-semibold leading-normal">
+                                <p className="md:text-base font-semibold leading-normal text-justify text-sm">
                                     The APs provide managerial guidance that is essential to the
                                     success of Bricklayer. The collective APs are tasked with
                                     developing, enhancing, operating, and promoting the DAO. APs
@@ -130,18 +133,35 @@ export default function Ap() {
                                             className="flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4"
                                         >
                                             <div className="flex items-start justify-end h-full mb-1">
-                                                <Link href={item.profileLink}>
-                                                    <Image
-                                                        src={item.img}
-                                                        alt=""
-                                                        width={24}
-                                                        height={24}
-                                                        onClick={() =>
-                                                            handleCopyLink(item.profileLink)
-                                                        } // Add onClick event here
-                                                        style={{ cursor: "pointer" }} // Set cursor to indicate the link is clickable
-                                                    />
-                                                </Link>
+                                                <div className="relative">
+                                                    <Link href={item.profileLink}>
+                                                        <Image
+                                                            src={item.img}
+                                                            alt=""
+                                                            width={24}
+                                                            height={24}
+                                                            onClick={(event) =>
+                                                                item.img ===
+                                                                "/media/models/discord.svg"
+                                                                    ? handleCopyLink(
+                                                                          item.profileLink,
+                                                                          event
+                                                                      )
+                                                                    : null
+                                                            }
+                                                            style={{ cursor: "pointer" }}
+                                                        />
+                                                    </Link>
+                                                    {copiedLink &&
+                                                        item.img ===
+                                                            "/media/models/discord.svg" && (
+                                                            <div className="absolute bg-white p-2 shadow rounded">
+                                                                <p className="text-[#E26E5D] font-semibold">
+                                                                    Copied!
+                                                                </p>
+                                                            </div>
+                                                        )}
+                                                </div>
                                             </div>
                                             <div className="flex flex-col items-start">
                                                 <h1 className="fmb text-[12px] font-normal">
@@ -154,15 +174,6 @@ export default function Ap() {
                                         </div>
                                     );
                                 })}
-                                {copiedLink && (
-                                    <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center backdrop-blur-sm">
-                                        <div className="bg-white p-4 shadow rounded">
-                                            <p className="text-[#E26E5D] font-semibold">
-                                                Link copied!
-                                            </p>
-                                        </div>
-                                    </div>
-                                )}  
                             </div>
                         </div>
                     )}
