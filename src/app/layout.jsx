@@ -1,12 +1,12 @@
 import Script from "next/script";
 
 import LoadingComponent from "@/components/internal/loading-component/loading.component";
-import Header from "./layout/header-layout";
-import Footer from "./layout/footer-layout/footer.component";
+import Header from "@/layout/header-layout/header.component";
+import Footer from "@/layout/footer-layout/footer.component";
 
 import { ibm, ps2p } from "./fonts";
 
-import "./layout/header-layout/header.scss";
+// import "@/layout/header-layout/header.scss";
 import "@/scss/globals.scss";
 import "@/scss/button.scss";
 
@@ -16,7 +16,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
     return (
         <html lang="en">
             <head>
@@ -24,8 +23,6 @@ export default function RootLayout({ children }) {
                     src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
                     type="module"
                 />
-                {/* <link rel="icon" href="/favicon.ico" /> */}
-                {/* <link rel="stylesheet" href="/font.scss" /> */}
             </head>
 
             <body className={`${ibm.variable} ${ps2p.variable}`}>

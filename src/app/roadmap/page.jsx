@@ -103,7 +103,7 @@ export default function useRoadmap() {
     };
 
     return (
-        <>
+        <div className="bg-frame">
             <div
                 className={`main ${activeYear === 1 ? "bg-road1" : ""} ${
                     activeYear === 2 ? "bg-road2" : ""
@@ -176,6 +176,6 @@ export default function useRoadmap() {
                     {renderContent()}
                 </div>
             </div>
-        </>
+        </div>
     );
 }
