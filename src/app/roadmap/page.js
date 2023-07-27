@@ -10,7 +10,7 @@ export default function useRoadmap() {
 
     const carPositions = {
         year1: {
-            desktop: 5,
+            desktop:0,
             tablet: 70,
             mobile: 70,
         },
@@ -39,7 +39,7 @@ export default function useRoadmap() {
     }, [isCarMoving, activeYear]);
 
     useEffect(() => {
-        setCurrentCarPosition(10    );
+        setCurrentCarPosition(-300);
         setIsCarMoving(true);
     }, []);
 
@@ -114,13 +114,15 @@ export default function useRoadmap() {
                 } ${activeYear === 3 ? "bg-road3" : ""} overflow-x-hidden min-[500px]:pb-0 pb-72`}
             >
                 <div className="">
-                    <div className="roadmap-title fmb text-5xl sm:text-7xl text-center text-shadow sm:mt-12 mt-[50px] z-10">
+                    <div className="roadmap-title fmb text-5xl sm:text-7xl text-center text-shadow sm:mt-12 mt-[45px]  z-10">
                         ROADMAP
                     </div>
-                    <div className="sm:mt-[80px] mt-[60px]">
+                    <div className="sm:mt-[80px] mt-[70px] min-[350px]:mt-[100px]"     >
                         <div className="flex justify-center md:gap-6 gap-4 py-4 mx-5 text-[10px] md:text-xs ">
                             <button
-                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
+                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 min-[350px]:text-xs
+                                text-sm sm:w-auto sm:text-base
+                                ${
                                     activeYear === 1 ? "active" : ""
                                 }`}
                                 style={{
@@ -131,7 +133,7 @@ export default function useRoadmap() {
                                 Year 1
                             </button>
                             <button
-                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
+                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base  ${
                                     activeYear === 2 ? "active" : ""
                                 }`}
                                 style={{
@@ -142,7 +144,7 @@ export default function useRoadmap() {
                                 Year 2
                             </button>
                             <button
-                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base ${
+                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-sm sm:w-auto sm:text-base  ${
                                     activeYear === 3 ? "active" : ""
                                 }`}
                                 style={{
@@ -165,10 +167,10 @@ export default function useRoadmap() {
                                 }}
                             >
                                 <div className="relative">
-                                    <img src="/car.png" className="car mr-64" alt="Car" size={30} />
+                                    <img src="/car.png" className="car md:mr-[250px] mr-[220px]" alt="Car" size={30} />
                                 </div>
                             </div>
-                            <div className="absolute inset-0 min-[680px]:top-[400px] top-[400px] h-[100px] md:mt-[300px] mt-[300px]  min-[680px]:mt-[900px] items-center justify-center mr-[260px] flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
+                            <div className="absolute inset-0 min-[680px]:top-[400px] top-[400px] h-[100px] md:mt-[300px] mt-[300px]  min-[680px]:mt-[900px] items-center justify-center mr-[220px] md:mr-[250px] flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
                                 <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
                             </div>
                         </>
