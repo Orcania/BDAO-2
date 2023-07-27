@@ -9,6 +9,7 @@ import { useState } from "react";
 
 export default function Ap() {
     const [activeContent, setActiveContent] = useState("existing");
+    const [copiedLink, setCopiedLink] = useState(null);
 
     const handleExistingClick = () => {
         setActiveContent("existing");
@@ -18,6 +19,16 @@ export default function Ap() {
         setActiveContent("available");
     };
 
+    const handleCopyLink = (link) => {
+        // Copy the link to the clipboard
+        navigator.clipboard.writeText(link).then(() => {
+            setCopiedLink(link);
+            // Clear the copied link message after a short delay (e.g., 3 seconds)
+            setTimeout(() => {
+                setCopiedLink(null);
+            }, 3000);
+        });
+    };
     return (
         <div className="bg-img">
             <div className="title text-center lg:text-[48px] sm:text-[30px] text-[25px] pt-10 bg-blur1">
@@ -36,11 +47,11 @@ export default function Ap() {
                 }}
             >
                 {/* Add buttons for switching content */}
-                <div className="flex w-full justify-start items-center gap-5">
+                <div className="flex w-full md:justify-start justify-center md:gap-5 items-center gap-10">
                     <button
                         className={`bg-[#E26E5D] border-3 border-white ${
                             activeContent === "existing" ? "text-white" : "text-[#FEBA98]"
-                        }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
+                        }  fmb p-3 w-32 text-[12px] sm:w-auto md:text-base ${
                             activeContent === "existing" ? "" : ""
                         }`}
                         onClick={handleExistingClick}
@@ -50,7 +61,7 @@ export default function Ap() {
                     <button
                         className={`bg-[#E26E5D] border-3 border-white ${
                             activeContent === "available" ? "text-white" : "text-[#FEBA98]"
-                        }  fmb p-3 w-32 text-sm sm:w-auto md:text-base ${
+                        }  fmb p-3 w-32 text-[12px] sm:w-auto md:text-base ${
                             activeContent === "available" ? "" : ""
                         }`}
                         onClick={handleAvailableClick}
@@ -110,38 +121,49 @@ export default function Ap() {
                                 </p>
                             </div>
                             <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 m-5 pb-20 ">
-                                     {available.map((item) => {
-                                        return (
-                                            // Render content for "Available" button
-                                            // ...
-                                            <div
+                                {available.map((item) => {
+                                    return (
+                                        // Render content for "Available" button
+                                        // ...
+                                        <div
                                             key={item.id}
-                                            className={`flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4 ${
-                                                item.id === 16 ? 'centering classes' : ''
-                                            }`}
+                                            className="flex flex-row gap-2 justify-start items-center bg-gray-200 hover:bg-opacity-40 bg-opacity-20 px-6 py-4"
                                         >
-                                                <div className="flex items-start justify-end h-full mb-1 ">
-                                                    <Link href={item.profileLink}>
-                                                        <Image
-                                                            src={item.img}
-                                                            alt=""
-                                                            width={24}
-                                                            height={24}
-                                                        />
-                                                    </Link>
-                                                </div>
-                                                <div className="flex flex-col items-start">
-                                                    <h1 className="fmb text-[12px] font-normal">
-                                                        {item.name}
-                                                    </h1>
-                                                    <h1 className="text-[#FFD3C8] text-[12px] font-semibold">
-                                                        {item.title}
-                                                    </h1>
-                                                </div>
+                                            <div className="flex items-start justify-end h-full mb-1">
+                                                <Link href={item.profileLink}>
+                                                    <Image
+                                                        src={item.img}
+                                                        alt=""
+                                                        width={24}
+                                                        height={24}
+                                                        onClick={() =>
+                                                            handleCopyLink(item.profileLink)
+                                                        } // Add onClick event here
+                                                        style={{ cursor: "pointer" }} // Set cursor to indicate the link is clickable
+                                                    />
+                                                </Link>
                                             </div>
-                                        );
-                                    })}
-                                </div>
+                                            <div className="flex flex-col items-start">
+                                                <h1 className="fmb text-[12px] font-normal">
+                                                    {item.name}
+                                                </h1>
+                                                <h1 className="text-[#FFD3C8] text-[12px] font-semibold">
+                                                    {item.title}
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                                {copiedLink && (
+                                    <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center backdrop-blur-sm">
+                                        <div className="bg-white p-4 shadow rounded">
+                                            <p className="text-[#E26E5D] font-semibold">
+                                                Link copied!
+                                            </p>
+                                        </div>
+                                    </div>
+                                )}  
+                            </div>
                         </div>
                     )}
                 </div>
