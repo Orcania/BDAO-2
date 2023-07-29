@@ -232,7 +232,7 @@ export const available = [
         img: "/media/models/linkedin.svg",
         profileLink: "https://www.linkedin.com/in/peter-ainscough-8a252251/",
         name: "Peter Ainscough",
-        title: "Real Estate AP (EMEA)", 
+        title: "Real Estate (EMEA)", 
     },
     {
         img: "/media/models/linkedin.svg",
