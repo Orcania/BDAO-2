@@ -54,7 +54,7 @@ export default function Ap() {
                     <button
                         className={`bg-[#E26E5D] border-3 border-white ${
                             activeContent === "existing" ? "text-white" : "text-[#FEBA98]"
-                        }  fmb p-3 w-32 text-[12px] sm:w-auto md:text-base ${
+                        }  fmb p-3  text-[12px] sm:w-auto md:text-base ${
                             activeContent === "existing" ? "" : ""
                         }`}
                         onClick={handleExistingClick}
@@ -64,7 +64,7 @@ export default function Ap() {
                     <button
                         className={`bg-[#E26E5D] border-3 border-white ${
                             activeContent === "available" ? "text-white" : "text-[#FEBA98]"
-                        }  fmb p-3 w-32 text-[12px] sm:w-auto md:text-base ${
+                        }  fmb p-3  text-[12px] sm:w-auto md:text-base ${
                             activeContent === "available" ? "" : ""
                         }`}
                         onClick={handleAvailableClick}
