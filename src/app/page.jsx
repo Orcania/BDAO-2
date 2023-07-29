@@ -77,9 +77,9 @@ export default function Home() {
                             <div className="mt-3 font-semibold text-base md:block hidden">
                                 <p>
                                     Physical asset investment platform fueled by virtual asset
-                                    growth. The Bricklayer community provides decentralized access
-                                    to institutional-grade real estate and builds wealth through
-                                    occupier focussed transactions. An original yet simple approach
+                                    growth. Bricklayer provides decentralized access to
+                                    institutional-grade real estate and builds wealth through
+                                    occupier focused transactions. An original yet simple approach
                                     which prioritizes consistent dividend generation and value
                                     appreciation.
                                 </p>
