@@ -1,0 +1,142 @@
+@media screen and (max-width: 680px) {
+    .bg-road1 {
+        background-image: url("/bg-images/road-year1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .bg-road1 {
+        background-image: url("/bg-images/road-year1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .bg-road2 {
+        background-image: url("/bg-images/road-year2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .bg-road2 {
+        background-image: url("/bg-images/road-year2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .bg-road3 {
+        background-image: url("/bg-images/road-year3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .bg-road3 {
+        background-image: url("/bg-images/road-year3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bg-frame {
+        background-image: url("/bg-images/Frame_35.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center top;
+    }
+}
+
+.bg-footer {
+    background-image: url("/photo_5100376236865203014_y-removebg-preview 2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-blur {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.text-shadow {
+    text-shadow: 0px 17px 26px rgba(0, 0, 0, 0.62);
+}
+
+.ccontainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    min-width: 120vw;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    margin-top: "20px";
+
+    position: relative;
+
+    column-gap: 30px;
+}
+
+.row:nth-child(2) {
+    @apply md:left-[-50px];
+}
+
+.row:nth-child(3) {
+    @apply md:left-[20px];
+}
+
+.row:nth-child(4) {
+    @apply md:left-[-50px];
+}
+.row:nth-child(5) {
+    @apply md:left-[-50px];
+}
+.row:nth-child(6) {
+    @apply md:left-[-50px];
+}
+
+.boxes {
+    width: 80vw;
+    border: 1px solid black;
+    // @apply md:width-[60px];
+    overflow: hidden;
+    height: 22vh;
+    background-color: rgba(226, 110, 93, 0.23);
+    // margin-right: 30px;
+    border: 3px solid white;
+
+    &.b {
+        background-color: rgba(#e26e5d, 0.75);
+        box-sizing: border-box;
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 824px) {
+    .row {
+        display: flex;
+        margin-top: "20px";
+        justify-content: center;
+        margin-right: 15%;
+    }
+}

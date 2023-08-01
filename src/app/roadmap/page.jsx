@@ -1,179 +1,170 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
+
 import "./roadmap.scss";
-import { useEffect, useState } from "react";
 
 export default function useRoadmap() {
-    const [activeYear, setActiveYear] = useState(null);
-    const [currentCarPosition, setCurrentCarPosition] = useState();
-    const [isCarMoving, setIsCarMoving] = useState(false);
-
-    const carPositions = {
-        year1: {
-            desktop: 0,
-            tablet: 70,
-            mobile: 70,
-        },
-        year2: {
-            desktop: 430,
-            tablet: 430,
-            mobile: 430,
-        },
-        year3: {
-            desktop: 220,
-            tablet: 220,
-            mobile: 220,
-        },
-    };
-
-    useEffect(() => {
-        if (isCarMoving) {
-            setCurrentCarPosition(carPositions[`year${activeYear}`][getScreenSize()]);
-            const timeoutId = setTimeout(() => {
-                setIsCarMoving(false);
-            }, 7000);
-            return () => {
-                clearTimeout(timeoutId);
-            };
-        }
-    }, [isCarMoving, activeYear]);
-
-    useEffect(() => {
-        setCurrentCarPosition(-300);
-        setIsCarMoving(true);
-    }, []);
-
-    useEffect(() => {
-        setActiveYear(1);
-    }, []);
-
-    useEffect(() => {
-        // Update car position on window resize
-        const handleResize = () => {
-            setCurrentCarPosition(carPositions[`year${activeYear}`][getScreenSize()]);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, [activeYear, carPositions]);
-
-    const handleYearClick = (year) => {
-        setIsCarMoving(false); // Stop car animation
-        setCurrentCarPosition(carPositions[`year${year}`][getScreenSize()]); // Update car position
-        setIsCarMoving(true); // Start car animation
-        setActiveYear(year); // Set active year
-    };
-
-    const getScreenSize = () => {
-        if (window.innerWidth <= 690) {
-            return "mobile";
-        } else if (window.innerWidth <= 1024) {
-            return "tablet";
-        } else {
-            return "desktop";
-        }
-    };
-
-    const renderContent = () => {
-        switch (activeYear) {
-            case 1:
-                return (
-                    <div className="flex justify-center ">
-                        <img className="invisible " src="/bg-images/road-year1.png" alt=""></img>
-                    </div>
-                );
-            case 2:
-                return (
-                    <div className="flex justify-center">
-                        <img className="invisible" src="/bg-images/road-year2.png" alt=""></img>
-                    </div>
-                );
-            case 3:
-                return (
-                    <div className="flex justify-center">
-                        <img className="invisible" src="/bg-images/road-year3.png" alt=""></img>
-                    </div>
-                );
-            default:
-                return null;
-        }
-    };
-
     return (
-        <div className="bg-frame">
-            <div
-                className={`main ${activeYear === 1 ? "bg-road1" : ""} ${
-                    activeYear === 2 ? "bg-road2" : ""
-                } ${activeYear === 3 ? "bg-road3" : ""} overflow-x-hidden min-[500px]:pb-0 pb-72`}
-            >
-                <div className="">
-                    <div className="roadmap-title fmb text-5xl sm:text-7xl text-center text-shadow sm:mt-12 mt-[45px]  z-10">
-                        ROADMAP
-                    </div>
-                    <div className="sm:mt-[80px] mt-[calc(10px+10vw)] min-[400px]:mt-[calc(15px+12vw)]">
-                        <div className="flex justify-center md:gap-6 gap-4 py-4 mx-5 text-[10px] md:text-xs ">
-                            <button
-                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-[10px] sm:w-auto sm:text-base
-                                ${activeYear === 1 ? "active" : ""}`}
-                                style={{
-                                    backgroundColor: activeYear === 1 ? "#E26E5D" : "transparent",
-                                }}
-                                onClick={() => handleYearClick(1)}
+        <div className="">
+            <div className="max-w-screen-xl lg:flex gap-12 lg:mx-auto p-4 mt-12">
+                <h1 className="fmb text-white text-5xl font-normal">ROADMAP</h1>
+            </div>
+            <div className="flex flex-col gap-10 justify-center items-center mt-10">
+                <div className="flex justify-start items-center ">
+                    <div className=" flex flex-row w-[80%]">
+                        {/* SVG 1 */}
+                        <div className="md:w-2/4 w-1/4">
+                            <svg
+                                width="990"
+                                height="70"
+                                viewBox="0 0 990 70"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="z-30 relative"
                             >
-                                Year 1
-                            </button>
-                            <button
-                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-[10px] sm:w-auto sm:text-base  ${
-                                    activeYear === 2 ? "active" : ""
-                                }`}
-                                style={{
-                                    backgroundColor: activeYear === 2 ? "#E26E5D" : "transparent",
-                                }}
-                                onClick={() => handleYearClick(2)}
+                                <path d="M0 0H947.151L990 35L947.151 70H0V0Z" fill="#E16E56" />
+
+                                <text
+                                    x="700"
+                                    y="35"
+                                    dominantBaseline="middle"
+                                    textAnchor="end"
+                                    fill="white"
+                                    fontSize="24"
+                                    fontWeight="bold"
+                                >
+                                    Year 1
+                                </text>
+                            </svg>
+                        </div>
+                        <div className="">
+                            {/* SVG 2 */}
+                            <svg
+                                width="583"
+                                height="70"
+                                viewBox="0 0 583 70"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="z-20  relative right-32"
                             >
-                                Year 2
-                            </button>
-                            <button
-                                className={`bg-transparent hover:bg-[#E26E5D] border-3 border-white hover:border-[#E26E5D] fmb p-2 w-32 text-[10px] sm:w-auto sm:text-base  ${
-                                    activeYear === 3 ? "active" : ""
-                                }`}
-                                style={{
-                                    backgroundColor: activeYear === 3 ? "#E26E5D" : "transparent",
-                                }}
-                                onClick={() => handleYearClick(3)}
+                                <path d="M0 0H542.708L583 35L542.708 70H0V0Z" fill="#F09A87" />
+
+                                <path d="M0 0H542.708L583 35L542.708 70H0V0Z" fill="#F09A87" />
+                                <text
+                                    x="450"
+                                    y="35"
+                                    dominantBaseline="middle"
+                                    textAnchor="end"
+                                    fill="white"
+                                    fontSize="24"
+                                    fontWeight="bold"
+                                >
+                                    Year 2
+                                </text>
+                            </svg>
+                        </div>
+
+                        {/* SVG 3 */}
+                        <div className="">
+                            <svg
+                                width="533"
+                                height="70"
+                                viewBox="0 0 533 70"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="z-10  relative right-96"
                             >
-                                Year 3
-                            </button>
+                                <path d="M0 0H496.164L533 35L496.164 70H0V0Z" fill="#FFCEC3" />
+
+                                <path d="M0 0H496.164L533 35L496.164 70H0V0Z" fill="#FFCEC3" />
+                                <text
+                                    x="450"
+                                    y="35"
+                                    dominantBaseline="middle"
+                                    textAnchor="end"
+                                    fill="white"
+                                    fontSize="24"
+                                    fontWeight="bold"
+                                >
+                                    Year 3
+                                </text>
+                            </svg>
                         </div>
                     </div>
-                    <br />
-                    {activeYear === 1 && (
-                        <>
-                            <div
-                                className="absolute inset-0 min-[680px]:top-[450px] top-[280px] flex items-start justify-center h-[200px]"
-                                style={{
-                                    transform: `translateY(${currentCarPosition}px)`,
-                                    transition: isCarMoving ? "transform 7s" : "none",
-                                }}
-                            >
-                                <div className="relative">
-                                    <img
-                                        src="/car.png"
-                                        className="car md:mr-[250px] mr-[220px]"
-                                        alt="Car"
-                                        size={30}
-                                    />
-                                </div>
+                </div>
+
+                <div className="max-w-screen-xl lg:flex gap-5 lg:mx-auto p-4 mb-44">
+                    <div className="flex flex-col w-[45%]">
+                        {/* Rest of your code... */}
+                        <div className="flex flex-row justify-center items-start gap-5">
+                            <div className=" text-red-400 text-sm font-semibold">
+                                <ul className="list-disc list-inside space-y-10 ">
+                                    <li className=" py-2">Formation of UAE Legal Entity</li>
+                                    <li className=" py-2">AI Integration</li>
+                                    <li className=" py-2">
+                                        Active Participant Formation, Vote, and Selection
+                                    </li>
+                                    <li
+                                    // className={`px-6 py-2 ${
+                                    //     isActive(0) ? "bg-[#E16E56] hover:border border-white" : ""
+                                    // }`}
+                                    >
+                                        BrickLayer Tenant Acquisition Service
+                                    </li>
+                                </ul>
                             </div>
-                            <div className="absolute inset-0 min-[680px]:top-[400px] top-[400px] h-[100px] md:mt-[300px] mt-[300px]  min-[680px]:mt-[900px] items-center justify-center mr-[220px] md:mr-[250px] flex gap-24 min-[680px]:gap-36 overflow-hidden z-10">
-                                <img src="/traffic-barrier-1.png" alt="Traffic Barrier 1" />
+                            <div className="text-sm font-semibold">
+                                <ul className="list-disc list-inside space-y-5 w-40">
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                        Release 1st Partner Occupier
+                                    </li>
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                        $BRICKS Token Issuance
+                                    </li>
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                        Launch Introduction Program
+                                    </li>
+                                </ul>
                             </div>
-                        </>
-                    )}
-                    {renderContent()}
+                            <div className="text-sm font-semibold">
+                                <ul className="list-disc list-inside space-y-5 w-40">
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                        Launch Staking Program
+                                    </li>
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                        Genesis acquisition complete
+                                    </li>
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                        Release 2nd Parnter Occupier
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-1/4">
+                        {/* Rest of your code... */}
+                        <ul className="list-disc list-inside space-y-10 w-[85%]">
+                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border border-white ">
+                                Launch of Bricklayer Listing Portal
+                            </li>
+                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border border-white ">
+                                Release 3rd Partner Occupier
+                            </li>
+                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border border-white ">
+                                Launch the Brickworks Tapestry
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="w-1/4 flex flex-col justify-start items-start">
+                        {/* Rest of your code... */}
+                        <ul className="list-disc list-inside space-y-10 w-[75%]">
+                            <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border border-white ">
+                                Bricklayer Listing Portal to offer Asset Sales and Escrow Platform
+                            </li>
+                            <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border border-white">
+                                Release 4th and 5th Partner Occupiers
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
