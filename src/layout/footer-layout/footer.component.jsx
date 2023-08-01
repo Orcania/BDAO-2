@@ -20,10 +20,11 @@ export default function Footer() {
             <div className="footer relative ">
                 <div className="absolute bottom-[100%] overflow-hidden  h-[150px] w-full">
                     <Image
-                        className={`absolute -bottom-2
-                        translate-y-[5px] ${pathname === "/roadmap" ? car : doll}`}
-                        width={pathname === "/roadmap" ? 206 : 103}
-                        height={pathname === "/roadmap" ? 324 : 162}
+                        className={`${
+                            pathname === "/roadmap" ? car : doll
+                        }`}
+                        width={pathname === "/roadmap" ? 206 : 103} 
+                        height={pathname === "/roadmap" ? 324 : 162} // Double the height for the car
                         src={pathname === "/roadmap" ? "/footer/car.png" : "/footer/little-man.gif"}
                         alt=""
                     ></Image>
