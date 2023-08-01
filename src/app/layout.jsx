@@ -1,12 +1,10 @@
 import Script from "next/script";
 
 import LoadingComponent from "@/components/internal/loading-component/loading.component";
-import Header from "@/layout/header-layout/header.component";
-import Footer from "@/layout/footer-layout/footer.component";
 
 import { ibm, ps2p } from "./fonts";
 
-// import "@/layout/header-layout/header.scss";
+import "@/layout/header-layout/header.scss";
 import "@/scss/globals.scss";
 import "@/scss/button.scss";
 
@@ -29,14 +27,12 @@ export default function RootLayout({ children }) {
 
             <body className={`${ibm.variable} ${ps2p.variable}`}>
                 <LoadingComponent />
-                <Header />
+                {/* <Header /> */}
                 <div className="main-bg">
-                    <div className="">
-                        <section className="pt-[81px]"></section>
-                        {children}
-                    </div>
+                    <section className="pt-[81px]"></section>
+                    {children}
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </body>
         </html>
     );
