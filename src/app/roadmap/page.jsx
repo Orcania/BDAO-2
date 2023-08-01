@@ -4,7 +4,7 @@ import "./roadmap.scss";
 
 export default function useRoadmap() {
     return (
-        <div className="">
+        <div className="overflow-hidden">
             <div className="max-w-screen-xl lg:flex gap-12 lg:mx-auto p-4 mt-12">
                 <h1 className="fmb text-white text-5xl font-normal">ROADMAP</h1>
             </div>
@@ -114,26 +114,26 @@ export default function useRoadmap() {
                             </div>
                             <div className="text-sm font-semibold">
                                 <ul className="list-disc list-inside space-y-5 w-40">
-                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent ">
                                         Release 1st Partner Occupier
                                     </li>
-                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                         $BRICKS Token Issuance
                                     </li>
-                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                         Launch Introduction Program
                                     </li>
                                 </ul>
                             </div>
                             <div className="text-sm font-semibold">
                                 <ul className="list-disc list-inside space-y-5 w-40">
-                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                         Launch Staking Program
                                     </li>
-                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                         Genesis acquisition complete
                                     </li>
-                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border border-white">
+                                    <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                         Release 2nd Parnter Occupier
                                     </li>
                                 </ul>
@@ -143,13 +143,13 @@ export default function useRoadmap() {
                     <div className="w-1/4">
                         {/* Rest of your code... */}
                         <ul className="list-disc list-inside space-y-10 w-[85%]">
-                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border border-white ">
+                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                 Launch of Bricklayer Listing Portal
                             </li>
-                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border border-white ">
+                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                 Release 3rd Partner Occupier
                             </li>
-                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border border-white ">
+                            <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                 Launch the Brickworks Tapestry
                             </li>
                         </ul>
@@ -157,10 +157,10 @@ export default function useRoadmap() {
                     <div className="w-1/4 flex flex-col justify-start items-start">
                         {/* Rest of your code... */}
                         <ul className="list-disc list-inside space-y-10 w-[75%]">
-                            <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border border-white ">
+                            <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                 Bricklayer Listing Portal to offer Asset Sales and Escrow Platform
                             </li>
-                            <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border border-white">
+                            <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                 Release 4th and 5th Partner Occupiers
                             </li>
                         </ul>
