@@ -20,3 +20,26 @@
         left: calc(0px - 103px);
     }
 }
+
+.car {
+    position: absolute;
+    animation: drive 20s linear infinite;
+
+    @media screen and (max-width: 768px) {
+        animation: drive 8s linear infinite;
+    }
+
+    @media screen and (max-width: 1024px) {
+        animation: drive 15s linear infinite;
+    }
+}
+
+@keyframes drive {
+    from {
+        left: -103px; /* Start off-screen */
+    }
+
+    to {
+        left: 100%; /* Move to the right */
+    }
+}
