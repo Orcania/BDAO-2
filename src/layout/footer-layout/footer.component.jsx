@@ -4,25 +4,26 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Image from "next/image";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 import styles from "./footer.module.scss";
 
 const { doll } = styles;
+const { car } = styles;
 
 // add a new feature
 
 export default function Footer() {
-    const pathname = usePathname()
-
+    const pathname = usePathname();
 
     return (
         <footer>
             <div className="footer relative ">
                 <div className="absolute bottom-[100%] overflow-hidden  h-[150px] w-full">
                     <Image
-                        className={`absolute bottom-0 translate-y-[5px] ${doll}`}
-                        width={103}
-                        height={162}
+                        className={`absolute -bottom-2
+                        translate-y-[5px] ${pathname === "/roadmap" ? car : doll}`}
+                        width={pathname === "/roadmap" ? 206 : 103}
+                        height={pathname === "/roadmap" ? 324 : 162}
                         src={pathname === "/roadmap" ? "/footer/car.png" : "/footer/little-man.gif"}
                         alt=""
                     ></Image>
