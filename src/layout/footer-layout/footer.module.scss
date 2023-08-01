@@ -1,12 +1,18 @@
 .doll {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(5px);
     animation: walk 25s linear infinite;
-    // background-color: red;
+}
 
-    @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .doll {
         animation: walk 5s linear infinite;
     }
+}
 
-    @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    .doll {
         animation: walk 10s linear infinite;
     }
 }
@@ -23,13 +29,19 @@
 
 .car {
     position: absolute;
+    bottom: -40px;
+    transform: translateY(-20px);
     animation: drive 20s linear infinite;
+}
 
-    @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .car {
         animation: drive 8s linear infinite;
     }
+}
 
-    @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    .car {
         animation: drive 15s linear infinite;
     }
 }
