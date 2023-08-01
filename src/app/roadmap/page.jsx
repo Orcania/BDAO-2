@@ -4,7 +4,7 @@ import "./roadmap.scss";
 
 export default function useRoadmap() {
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden  bg-frame">
             <div className="max-w-screen-xl lg:flex gap-12 lg:mx-auto p-4 mt-12">
                 <h1 className="fmb text-white text-5xl font-normal">ROADMAP</h1>
             </div>
@@ -31,6 +31,8 @@ export default function useRoadmap() {
                                     fill="white"
                                     fontSize="24"
                                     fontWeight="bold"
+                                   className="fmb text-white text-sm font-normal"
+                                
                                 >
                                     Year 1
                                 </text>
@@ -57,6 +59,8 @@ export default function useRoadmap() {
                                     fill="white"
                                     fontSize="24"
                                     fontWeight="bold"
+                                    className="fmb text-white text-sm font-normal"
+
                                 >
                                     Year 2
                                 </text>
@@ -84,6 +88,8 @@ export default function useRoadmap() {
                                     fill="white"
                                     fontSize="24"
                                     fontWeight="bold"
+                                    className="fmb text-white text-sm font-normal"
+
                                 >
                                     Year 3
                                 </text>
