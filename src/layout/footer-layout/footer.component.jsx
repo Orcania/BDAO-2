@@ -4,7 +4,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation'
 import styles from "./footer.module.scss";
 
 const { doll } = styles;
@@ -12,8 +12,8 @@ const { doll } = styles;
 // add a new feature
 
 export default function Footer() {
-    const router = useRouter();
-    const isRoadmapPage = router.pathname === '/roadmap' 
+    const pathname = usePathname()
+
 
     return (
         <footer>
@@ -23,7 +23,8 @@ export default function Footer() {
                         className={`absolute bottom-0 translate-y-[5px] ${doll}`}
                         width={103}
                         height={162}
-                        src={isRoadmapPage === '/roadmap' ? "/footer/car.png" : "/footer/little-man.gif"}                         alt=""
+                        src={pathname === "/roadmap" ? "/footer/car.png" : "/footer/little-man.gif"}
+                        alt=""
                     ></Image>
                 </div>
 
@@ -108,7 +109,6 @@ export default function Footer() {
                                     height={20}
                                     alt=""
                                     src="/footer/M.svg"
-
                                 ></Image>
                             </a>
                         </div>
