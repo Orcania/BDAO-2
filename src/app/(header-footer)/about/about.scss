@@ -1,0 +1,108 @@
+
+.text{
+    opacity: 0.6;
+    transition: opacity 0.5s ease-out;
+}
+
+.text:active{
+    opacity: 1;
+}
+
+@media only screen and (max-width:768px){
+  .column-2::after{
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 35px;
+    width: 22px;
+    height: 22px;
+    background-image: url('/Vector 56.svg');
+}
+}
+
+@media only screen and (min-width:768px){
+  .column-2::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 22px;
+    height: 22px;
+    background-image: url('/Vector 56.svg');
+  }
+}
+
+@media only screen and (min-width:768px){
+  .number{
+    transform: translate(-40px , -52px);
+}
+}
+
+@media only screen and (max-width:768px){
+  .number{
+    transform: translate(-8px , -25px);
+}
+}
+
+  .italic {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+
+  .disc{
+    list-style-type: disc;
+  }
+
+  .fade{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .show{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .translate{
+    position: absolute;
+    left: 40px;
+  }
+
+  .bg-blur1::after{
+    filter: blur(160px);
+  }
+
+  .bg-blur2::after{
+    top: 100%;
+    right: -16%;
+  }
+
+  .bg-blur2::before{
+    top: 950px;
+    filter: blur(150px);
+    left: -70%;
+  }
+  ::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    background: rgba(226, 110, 93, 0.3); /* Color of the scrollbar handle with opacity */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e26e5d; /* Color of the scrollbar handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e26e5d; /* Color of the scrollbar handle on hover */
+  }
+
+  @media  screen and (min-width: 768px) {
+    .bg-towers{
+      background-image: url('/bg-images/towers.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+    } 
+  }
