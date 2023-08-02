@@ -5,15 +5,28 @@ import { useState } from "react";
 
 export default function useRoadmap() {
     const [selectedYear, setSelectedYear] = useState(1);
-
+    const [selectedSvg1, setSelectedSvg1] = useState(true);
     const [selectedSvg2, setSelectedSvg2] = useState(false);
     const [selectedSvg3, setSelectedSvg3] = useState(false);
-
     const handleYearClick = (year) => {
         setSelectedYear(year);
+        if (year === 1) {
+            setSelectedSvg1(true);
+            setSelectedSvg2(false);
+            setSelectedSvg3(false);
+        }
 
-        if (year === 2) setSelectedSvg2(true);
-        if (year === 3) setSelectedSvg3(true);
+        if (year === 2) {
+            setSelectedSvg1(false);
+            setSelectedSvg2(true);
+            setSelectedSvg3(false);
+        }
+
+        if (year === 3) {
+            setSelectedSvg1(false);
+            setSelectedSvg2(false);
+            setSelectedSvg3(true);
+        }
     };
     return (
         <div className="overflow-hidden  bg-frame">
@@ -201,18 +214,20 @@ export default function useRoadmap() {
                         onClick={() => handleYearClick(1)}
                     >
                         <path d="M0 0H223.694L262 31.5L223.694 63H0V0Z" fill="#E16E56" />
-                        <text
-                            x="50%"
-                            y="50%"
-                            dominantBaseline="middle"
-                            textAnchor="middle"
-                            fill="white"
-                            fontSize="24"
-                            fontWeight="bold"
-                            className="fmb text-white text-sm font-normal"
-                        >
-                            Year 1
-                        </text>
+                        {selectedSvg1 && (
+                            <text
+                                x="50%"
+                                y="50%"
+                                dominantBaseline="middle"
+                                textAnchor="middle"
+                                fill="white"
+                                fontSize="24"
+                                fontWeight="bold"
+                                className="fmb text-white text-sm font-normal"
+                            >
+                                Year 1
+                            </text>
+                        )}
                     </svg>
 
                     <svg
@@ -222,7 +237,7 @@ export default function useRoadmap() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className={`z-20  relative ${
-                            selectedSvg2 || selectedSvg3 ? "-left-12" : "-left-24"
+                            selectedSvg2 || selectedSvg3 ? "-left-10" : "-left-24"
                         }`}
                         onClick={() => handleYearClick(2)}
                     >
@@ -275,22 +290,15 @@ export default function useRoadmap() {
 
                 {/* Render the content based on the selected year */}
                 {selectedYear === 1 && (
-                    <div className="flex md:flex-row flex-col gap-5 justify-center items-start mb-44">
+                    <div className="grid grid-cols-3 gap-5 justify-center items-start mb-44">
                         <div className="">
-                            <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold w-2/4">
-                                <li className=" px-6  py-2">Formation of UAE Legal Entity</li>
-                                <li className="  px-6  py-2">AI Integration</li>
-                                <li className="  px-6  py-2">
+                            <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
+                                <li className="py-2">Formation of UAE Legal Entity</li>
+                                <li className="py-2">AI Integration</li>
+                                <li className=" py-2">
                                     Active Participant Formation, Vote, and Selection
                                 </li>
-                                <li
-                                    // className={`px-6 py-2 ${
-                                    //     isActive(0) ? "bg-[#E16E56] hover:border border-white" : ""
-                                    // }`}
-                                    className=" px-6 py-2"
-                                >
-                                    BrickLayer Tenant Acquisition Service
-                                </li>
+                                <li className="py-2">BrickLayer Tenant Acquisition Service</li>
                             </ul>
                         </div>
                         <div className="text-sm font-semibold">
