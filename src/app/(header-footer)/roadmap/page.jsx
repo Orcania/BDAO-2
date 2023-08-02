@@ -210,7 +210,9 @@ export default function useRoadmap() {
                         viewBox="0 0 262 63"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="z-30  relative "
+                        className={`z-30  relative transition-all duration-500 ${
+                            selectedYear === 3 ? "-left-10" :  selectedYear === 2 ? "-left-10" : ""
+                        }`}
                         onClick={() => handleYearClick(1)}
                     >
                         <path d="M0 0H223.694L262 31.5L223.694 63H0V0Z" fill="#E16E56" />
@@ -236,8 +238,8 @@ export default function useRoadmap() {
                         viewBox="0 0 262 63"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`z-20  relative ${
-                            selectedSvg2 || selectedSvg3 ? "-left-10" : "-left-24"
+                        className={`z-20  relative transition-all duration-500 ${
+                            selectedYear === 3 ? "-left-36" : selectedYear === 2 ? "-left-20" : "-left-24"
                         }`}
                         onClick={() => handleYearClick(2)}
                     >
@@ -264,8 +266,8 @@ export default function useRoadmap() {
                         viewBox="0 0 262 63"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`z-10  relative ${
-                            selectedSvg3 ? "-left-20" : selectedSvg2 ? "-left-36" : "-left-48"
+                        className={`z-10  relative transition-all duration-500 -left-48 first-letter:${
+                            selectedYear === 3 ? "-left-52" : ""
                         }`}
                         onClick={() => handleYearClick(3)}
                     >
@@ -273,14 +275,14 @@ export default function useRoadmap() {
 
                         {selectedSvg3 && (
                             <text
-                                x="50%"
+                                x="60%"
                                 y="50%"
                                 dominantBaseline="middle"
                                 textAnchor="middle"
                                 fill="white"
                                 fontSize="24"
                                 fontWeight="bold"
-                                className="fmb text-white text-sm font-normal"
+                                className="fmb text-white text-sm font-normal ml-10"
                             >
                                 Year 3
                             </text>
