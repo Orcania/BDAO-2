@@ -292,7 +292,7 @@ export default function useRoadmap() {
 
                 {/* Render the content based on the selected year */}
                 {selectedYear === 1 && (
-                    <div className="grid grid-cols-3 gap-5 justify-center items-start mb-44">
+                    <div className="grid grid-cols-3 gap-5 justify-center items-start mb-44 p-5">
                         <div className="">
                             <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
                                 <li className="py-2">Formation of UAE Legal Entity</li>
@@ -332,7 +332,7 @@ export default function useRoadmap() {
                     </div>
                 )}
                 {selectedYear === 2 && (
-                    <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start mb-64">
+                    <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start mb-64 p-5">
                         {/* Rest of your code... */}
                         <ul className="list-disc list-inside space-y-10 md:space-y-5 w-44 text-white text-sm font-semibold">
                             <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
@@ -348,7 +348,7 @@ export default function useRoadmap() {
                     </div>
                 )}
                 {selectedYear === 3 && (
-                    <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start mb-72">
+                    <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start mb-72 p-5">
                         {/* Rest of your code... */}
                         <ul className="list-disc list-inside space-y-10 md:space-y-5 w-56 text-white text-sm font-semibold">
                             <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
