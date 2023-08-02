@@ -4,12 +4,17 @@ import "./roadmap.scss";
 import { useState } from "react";
 
 export default function useRoadmap() {
-    const [selectedYear, setSelectedYear] = useState(1); // State to track the selected year
+        const [selectedYear, setSelectedYear] = useState(1);
+        const [showText, setShowText] = useState(false);
+        const [selectedSvg2, setSelectedSvg2] = useState(false);
+        const [selectedSvg3, setSelectedSvg3] = useState(false);
 
-    const handleYearClick = (year) => {
-        setSelectedYear(year); // Update the selected year when an SVG is clicked
-    };
-
+        const handleYearClick = (year) => {
+            setSelectedYear(year); 
+            setShowText(true);
+            if(year === 2) setSelectedSvg2(true); 
+            if(year === 3) setSelectedSvg3(true); 
+        };
     return (
         <div className="overflow-hidden  bg-frame">
             <div className="max-w-screen-xl lg:flex gap-12 lg:mx-auto p-4 mt-12  flex justify-center items-center md:flex md:items-start md:justify-start">
@@ -209,17 +214,31 @@ export default function useRoadmap() {
                             Year 1
                         </text>
                     </svg>
-
+                    
                     <svg
                         width="262"
                         height="63"
                         viewBox="0 0 262 63"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="z-20  relative -left-24 "
+                        className={`z-20  relative ${selectedSvg2 || selectedSvg3 ? '-left-12' : '-left-24'}`}
                         onClick={() => handleYearClick(2)}
                     >
                         <path d="M0 0H223.694L262 31.5L223.694 63H0V0Z" fill="#F09A87" />
+                        {selectedSvg2  && (
+                            <text
+                            x="50%"
+                            y="50%"
+                            dominantBaseline="middle"
+                            textAnchor="middle"
+                            fill="white"
+                            fontSize="24"
+                            fontWeight="bold"
+                            className="fmb text-white text-sm font-normal"
+                        >
+                            Year 2
+                        </text>
+                        )}
                     </svg>
 
                     <svg
@@ -228,10 +247,26 @@ export default function useRoadmap() {
                         viewBox="0 0 262 63"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="z-10  relative -left-48 "
+                        className={`z-10  relative ${selectedSvg3 ? '-left-20' : (selectedSvg2 ? '-left-36' : '-left-48')}`}
+
                         onClick={() => handleYearClick(3)}
                     >
-                        <path d="M0 0H223.694L262 31.5L223.694 63H0V0Z" fill="#FFCEC3" />
+                        <path d="M0 0H223.694L262 31.5L223.694 63H0V0Z" fill="#FFCEC3" />   
+
+                        {selectedSvg3 && (
+                            <text
+                            x="50%"
+                            y="50%"
+                            dominantBaseline="middle"
+                            textAnchor="middle"
+                            fill="white"
+                            fontSize="24"
+                            fontWeight="bold"
+                            className="fmb text-white text-sm font-normal"
+                        >
+                            Year 3
+                        </text>
+                        )}
                     </svg>
                 </div>
 
@@ -239,7 +274,7 @@ export default function useRoadmap() {
                 {selectedYear === 1 && (
                     <div className="flex md:flex-row flex-col gap-5 justify-center items-start mb-44">
                         <div className="">
-                            <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
+                            <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold w-2/4">
                                 <li className=" px-6  py-2">Formation of UAE Legal Entity</li>
                                 <li className="  px-6  py-2">AI Integration</li>
                                 <li className="  px-6  py-2">
