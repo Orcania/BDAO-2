@@ -5,9 +5,10 @@ import "./roadmap.scss";
 export default function useRoadmap() {
     return (
         <div className="overflow-hidden  bg-frame">
-            <div className="max-w-screen-xl lg:flex gap-12 lg:mx-auto p-4 mt-12">
+             <div className="max-w-screen-xl lg:flex gap-12 lg:mx-auto p-4 mt-12  flex justify-center items-center md:flex md:items-start md:justify-start" >
                 <h1 className="fmb text-white text-5xl font-normal">ROADMAP</h1>
             </div>
+
             <div className="flex flex-col gap-10 justify-center items-center mt-10">
                 <div className="flex justify-start items-center ">
                     <div className=" flex flex-row w-[80%]">
@@ -24,15 +25,14 @@ export default function useRoadmap() {
                                 <path d="M0 0H947.151L990 35L947.151 70H0V0Z" fill="#E16E56" />
 
                                 <text
-                                    x="700"
+                                    x="750"
                                     y="35"
                                     dominantBaseline="middle"
                                     textAnchor="end"
                                     fill="white"
                                     fontSize="24"
                                     fontWeight="bold"
-                                   className="fmb text-white text-sm font-normal"
-                                
+                                    className="fmb text-white text-sm font-normal"
                                 >
                                     Year 1
                                 </text>
@@ -60,7 +60,6 @@ export default function useRoadmap() {
                                     fontSize="24"
                                     fontWeight="bold"
                                     className="fmb text-white text-sm font-normal"
-
                                 >
                                     Year 2
                                 </text>
@@ -81,7 +80,7 @@ export default function useRoadmap() {
 
                                 <path d="M0 0H496.164L533 35L496.164 70H0V0Z" fill="#FFCEC3" />
                                 <text
-                                    x="450"
+                                    x="430"
                                     y="35"
                                     dominantBaseline="middle"
                                     textAnchor="end"
@@ -89,7 +88,6 @@ export default function useRoadmap() {
                                     fontSize="24"
                                     fontWeight="bold"
                                     className="fmb text-white text-sm font-normal"
-
                                 >
                                     Year 3
                                 </text>
@@ -98,28 +96,29 @@ export default function useRoadmap() {
                     </div>
                 </div>
 
-                <div className="max-w-screen-xl lg:flex gap-5 lg:mx-auto p-4 mb-44">
-                    <div className="flex flex-col w-[45%]">
+                <div className="max-w-screen-xl lg:flex gap-5 lg:mx-auto p-4 mb-44 md:space-y-0 space-y-10">
+                    <div className="flex flex-col w-2/4 md:w-[45%]">
                         {/* Rest of your code... */}
-                        <div className="flex flex-row justify-center items-start gap-5">
-                            <div className=" text-red-400 text-sm font-semibold">
-                                <ul className="list-disc list-inside space-y-10 ">
-                                    <li className=" py-2">Formation of UAE Legal Entity</li>
-                                    <li className=" py-2">AI Integration</li>
-                                    <li className=" py-2">
+                        <div className="flex md:flex-row flex-col gap-5 justify-center items-start">
+                            <div className="">
+                                <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
+                                    <li className=" px-6  py-2">Formation of UAE Legal Entity</li>
+                                    <li className="  px-6  py-2">AI Integration</li>
+                                    <li className="  px-6  py-2">
                                         Active Participant Formation, Vote, and Selection
                                     </li>
                                     <li
                                     // className={`px-6 py-2 ${
                                     //     isActive(0) ? "bg-[#E16E56] hover:border border-white" : ""
                                     // }`}
+                                    className=" px-6 py-2"
                                     >
                                         BrickLayer Tenant Acquisition Service
                                     </li>
                                 </ul>
                             </div>
                             <div className="text-sm font-semibold">
-                                <ul className="list-disc list-inside space-y-5 w-40">
+                                <ul className="list-disc list-inside space-y-10 md:space-y-5 w-64 md:w-40  text-white text-sm font-semibold">
                                     <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent ">
                                         Release 1st Partner Occupier
                                     </li>
@@ -132,7 +131,7 @@ export default function useRoadmap() {
                                 </ul>
                             </div>
                             <div className="text-sm font-semibold">
-                                <ul className="list-disc list-inside space-y-5 w-40">
+                                <ul className="list-disc list-inside space-y-10 md:space-y-5 w-40  text-white text-sm font-semibold">
                                     <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                         Launch Staking Program
                                     </li>
@@ -146,9 +145,9 @@ export default function useRoadmap() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/4">
+                    <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start">
                         {/* Rest of your code... */}
-                        <ul className="list-disc list-inside space-y-10 w-[85%]">
+                        <ul className="list-disc list-inside space-y-10 md:space-y-5 w-44 text-white text-sm font-semibold">
                             <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                 Launch of Bricklayer Listing Portal
                             </li>
@@ -160,9 +159,9 @@ export default function useRoadmap() {
                             </li>
                         </ul>
                     </div>
-                    <div className="w-1/4 flex flex-col justify-start items-start">
+                    <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start">
                         {/* Rest of your code... */}
-                        <ul className="list-disc list-inside space-y-10 w-[75%]">
+                        <ul className="list-disc list-inside space-y-10 md:space-y-5 w-56 text-white text-sm font-semibold">
                             <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                 Bricklayer Listing Portal to offer Asset Sales and Escrow Platform
                             </li>
