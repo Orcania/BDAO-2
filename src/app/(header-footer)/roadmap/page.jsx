@@ -246,7 +246,7 @@ export default function useRoadmap() {
                         <path d="M0 0H223.694L262 31.5L223.694 63H0V0Z" fill="#F09A87" />
                         {selectedSvg2 && (
                             <text
-                                x="50%"
+                                x="60%"
                                 y="50%"
                                 dominantBaseline="middle"
                                 textAnchor="middle"
@@ -266,7 +266,7 @@ export default function useRoadmap() {
                         viewBox="0 0 262 63"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`z-10  relative transition-all duration-500 -left-44 first-letter:${
+                        className={`z-10  relative transition-all duration-500 -left-48 first-letter:${
                             selectedYear === 3 ? "-left-52" : ""
                         }`}
                         onClick={() => handleYearClick(3)}
