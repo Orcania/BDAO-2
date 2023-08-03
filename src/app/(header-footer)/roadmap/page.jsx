@@ -40,14 +40,14 @@ export default function useRoadmap() {
                             {/* SVG 1 */}
                             <div className="md:w-2/4 w-1/4">
                                 <svg
-                                    width="990"
+                                    width="1040"
                                     height="70"
-                                    viewBox="0 0 990 70"
+                                    viewBox="0 0 1040 70"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="z-30 relative"
+                                    className="z-30  relative -right-10"
                                 >
-                                    <path d="M0 0H947.151L990 35L947.151 70H0V0Z" fill="#E16E56" />
+                                    <path d="M0 0H997.151L1040 35L997.151 70H0V0Z" fill="#E16E56" />
 
                                     <text
                                         x="700"
@@ -71,7 +71,7 @@ export default function useRoadmap() {
                                     viewBox="0 0 583 70"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="z-20  relative right-32"
+                                    className="z-20  relative right-[70px]"
                                 >
                                     <path d="M0 0H542.708L583 35L542.708 70H0V0Z" fill="#F09A87" />
 
@@ -99,13 +99,13 @@ export default function useRoadmap() {
                                     viewBox="0 0 533 70"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="z-10  relative right-96"
+                                    className="z-10  relative right-[310px]"
                                 >
                                     <path d="M0 0H496.164L533 35L496.164 70H0V0Z" fill="#FFCEC3" />
 
                                     <path d="M0 0H496.164L533 35L496.164 70H0V0Z" fill="#FFCEC3" />
                                     <text
-                                        x="450"
+                                        x="420"
                                         y="35"
                                         dominantBaseline="middle"
                                         textAnchor="end"
@@ -120,51 +120,44 @@ export default function useRoadmap() {
                             </div>
                         </div>
                     </div>
-                    <div className="max-w-screen-xl lg:flex gap-5 lg:mx-auto p-4 mb-44 md:space-y-0 space-y-10">
-                        <div className="flex flex-col w-2/4 md:w-[45%]">
+                    <div className="max-w-screen-xl lg:flex gap-2 lg:mx-auto p-4 mb-40 md:space-y-0 space-y-10">
+                        <div className="flex flex-col w-2/4 md:w-[48%]">
                             {/* Rest of your code... */}
-                            <div className="flex md:flex-row flex-col gap-5 justify-center items-start">
+                            <div className="flex md:flex-row flex-col gap-2 justify-center items-start">
                                 <div className="">
                                     <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
-                                        <li className=" px-6  py-2">
-                                            Formation of UAE Legal Entity
-                                        </li>
-                                        <li className="  px-6  py-2">AI Integration</li>
-                                        <li className="  px-6  py-2">
+                                        <li className=" py-2">Formation of UAE Legal Entity</li>
+                                        <li className="py-2">AI Integration</li>
+                                        <li className="py-2">
                                             Active Participant Formation, Vote, and Selection
                                         </li>
-                                        <li
-                                            // className={`px-6 py-2 ${
-                                            //     isActive(0) ? "bg-[#E16E56] hover:border border-white" : ""
-                                            // }`}
-                                            className=" px-6 py-2"
-                                        >
+                                        <li className="py-2">
                                             BrickLayer Tenant Acquisition Service
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="text-sm font-semibold">
-                                    <ul className="list-disc list-inside space-y-10 md:space-y-5 w-64 md:w-40  text-white text-sm font-semibold">
-                                        <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent ">
+                                    <ul className="list-disc list-inside space-y-10 md:space-y-5 w-64 md:w-52  text-white text-sm font-semibold">
+                                        <li className="px-4 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent ">
                                             Release 1st Partner Occupier
                                         </li>
-                                        <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
+                                        <li className="px-4 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                             $BRICKS Token Issuance
                                         </li>
-                                        <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
+                                        <li className="px-4 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                             Launch Introduction Program
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="text-sm font-semibold">
-                                    <ul className="list-disc list-inside space-y-10 md:space-y-5 w-40  text-white text-sm font-semibold">
-                                        <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
+                                    <ul className="list-disc list-inside space-y-10 md:space-y-5 w-52  text-white text-sm font-semibold">
+                                        <li className="px-4 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                             Launch Staking Program
                                         </li>
-                                        <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
+                                        <li className="px-4 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                             Genesis acquisition complete
                                         </li>
-                                        <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
+                                        <li className="px-4 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                             Release 2nd Parnter Occupier
                                         </li>
                                     </ul>
@@ -173,26 +166,26 @@ export default function useRoadmap() {
                         </div>
                         <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start">
                             {/* Rest of your code... */}
-                            <ul className="ml-8 list-disc list-inside space-y-10 md:space-y-5 w-52 text-white text-sm font-semibold">
-                                <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
+                            <ul className="ml-8 list-disc list-inside space-y-10 md:space-y-5 text-justify w-56 text-white text-sm font-semibold">
+                                <li className="px-4 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                     Launch of Bricklayer Listing Portal
                                 </li>
-                                <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
+                                <li className="px-4 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                     Release 3rd Partner Occupier
                                 </li>
-                                <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
+                                <li className="px-4 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                     Launch the Brickworks Tapestry
                                 </li>
                             </ul>
                         </div>
-                        <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start">
+                        <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start text-justify">
                             {/* Rest of your code... */}
                             <ul className="list-disc list-inside space-y-10 md:space-y-5 w-56 text-white text-sm font-semibold">
-                                <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Bricklayer Listing Portal to offer Asset Sales and Escrow
                                     Platform
                                 </li>
-                                <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Release 4th and 5th Partner Occupiers
                                 </li>
                             </ul>
@@ -211,7 +204,7 @@ export default function useRoadmap() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className={`z-30  relative transition-all duration-500 ${
-                            selectedYear === 3 ? "-left-10" :  selectedYear === 2 ? "-left-10" : ""
+                            selectedYear === 3 ? "-left-10" : selectedYear === 2 ? "-left-10" : ""
                         }`}
                         onClick={() => handleYearClick(1)}
                     >
@@ -239,7 +232,11 @@ export default function useRoadmap() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className={`z-20  relative transition-all duration-500 ${
-                            selectedYear === 3 ? "-left-36" : selectedYear === 2 ? "-left-20" : "-left-24"
+                            selectedYear === 3
+                                ? "-left-36"
+                                : selectedYear === 2
+                                ? "-left-20"
+                                : "-left-24"
                         }`}
                         onClick={() => handleYearClick(2)}
                     >
