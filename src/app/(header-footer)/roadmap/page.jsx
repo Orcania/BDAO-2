@@ -233,7 +233,7 @@ export default function useRoadmap() {
                         xmlns="http://www.w3.org/2000/svg"
                         className={`z-20  relative transition-all duration-500 ${
                             selectedYear === 3
-                                ? "-left-28"
+                                ? "-left-[105px]"
                                 : selectedYear === 2
                                 ? "-left-20"
                                 : "-left-20"
