@@ -236,7 +236,7 @@ export default function useRoadmap() {
                                 ? "-left-36"
                                 : selectedYear === 2
                                 ? "-left-20"
-                                : "-left-24"
+                                : "-left-20"
                         }`}
                         onClick={() => handleYearClick(2)}
                     >
@@ -263,7 +263,7 @@ export default function useRoadmap() {
                         viewBox="0 0 262 63"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`z-10  relative transition-all duration-500 -left-48 first-letter:${
+                        className={`z-10  relative transition-all duration-500 -left-40 first-letter:${
                             selectedYear === 3 ? "-left-52" : ""
                         }`}
                         onClick={() => handleYearClick(3)}
