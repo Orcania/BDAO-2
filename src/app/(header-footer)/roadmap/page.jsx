@@ -173,7 +173,7 @@ export default function useRoadmap() {
                         </div>
                         <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start">
                             {/* Rest of your code... */}
-                            <ul className="list-disc list-inside space-y-10 md:space-y-5 w-44 text-white text-sm font-semibold">
+                            <ul className="ml-8 list-disc list-inside space-y-10 md:space-y-5 w-52 text-white text-sm font-semibold">
                                 <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                     Launch of Bricklayer Listing Portal
                                 </li>
