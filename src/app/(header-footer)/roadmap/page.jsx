@@ -126,12 +126,12 @@ export default function useRoadmap() {
                             <div className="flex md:flex-row flex-col gap-2 justify-center items-start">
                                 <div className="">
                                     <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
-                                        <li className=" py-2">Formation of UAE Legal Entity</li>
-                                        <li className="py-2">AI Integration</li>
-                                        <li className="py-2">
+                                        <li className=" py-3">Formation of UAE Legal Entity</li>
+                                        <li className="">AI Integration</li>
+                                        <li className="">
                                             Active Participant Formation, Vote, and Selection
                                         </li>
-                                        <li className="py-2">
+                                        <li className="">
                                             BrickLayer Tenant Acquisition Service
                                         </li>
                                     </ul>
