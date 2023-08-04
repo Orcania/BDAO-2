@@ -25,7 +25,7 @@ export default function Footer() {
                         }`}
                         width={pathname === "/roadmap" ? 206 : 103} 
                         height={pathname === "/roadmap" ? 324 : 162} // Double the height for the car
-                        src={pathname === "/roadmap" ? "/footer/car.gif" : "/footer/little-man.gif"}
+                        src={pathname === "/roadmap" ? "/footer/car-2.gif" : "/footer/little-man.gif"}
                         alt=""
                     ></Image>
                 </div>
