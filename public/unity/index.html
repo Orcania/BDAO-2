@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Unity WebGL Player | BDAO-Treasury</title>
-        <link rel="shortcut icon" href="TemplateData/favicon.ico" />
-        <link rel="stylesheet" href="TemplateData/style.css" />
-        <script src="TemplateData/UnityProgress.js"></script>
-        <script src="Build/UnityLoader.js"></script>
-        <script>
-            var unityInstance = UnityLoader.instantiate(
-                "unityContainer",
-                "Build/BdaoTreasury WebGL - Copy.json",
-                { onProgress: UnityProgress }
-            );
-        </script>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unity WebGL Player | BDAO-Treasury</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/BdaoTreasury WebGL - Copy.json",
+        { onProgress: UnityProgress }
+      );
+    </script>
 
-        <style>
-            html,
-            body {
-                padding: 0;
-                margin: 0;
-                overflow: hidden;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="unityContainer" class="w-full" style="aspect-ratio: 8/5; overflow: hidden"></div>
-    </body>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="unityContainer"
+      class="w-full"
+      style="aspect-ratio: 8/5; overflow: hidden"
+    ></div>
+  </body>
 </html>
