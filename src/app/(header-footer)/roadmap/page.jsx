@@ -125,9 +125,9 @@ export default function useRoadmap() {
                             {/* Rest of your code... */}
                             <div className="flex md:flex-row flex-col gap-2 justify-center items-start">
                                 <div className="">
-                                    <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
+                                    <ul className="list-disc list-inside space-y-7 text-[#F1775E] text-sm font-semibold">
                                         <li className=" py-3">Formation of UAE Legal Entity</li>
-                                        <li className="">AI Integration</li>
+                                        <li className="pb-7">AI Integration</li>
                                         <li className="">
                                             Active Participant Formation, Vote, and Selection
                                         </li>
@@ -180,8 +180,8 @@ export default function useRoadmap() {
                         </div>
                         <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start text-justify">
                             {/* Rest of your code... */}
-                            <ul className="list-disc list-inside space-y-10 md:space-y-5 w-56 text-white text-sm font-semibold">
-                                <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                            <ul className="list-disc list-inside space-y-10 md:space-y-16 w-56 text-white text-sm font-semibold">
+                                <li className="px-4 py-1 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Bricklayer Listing Portal to offer Asset Sales and Escrow
                                     Platform
                                 </li>
