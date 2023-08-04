@@ -5,7 +5,10 @@ export default function layout({ children }) {
     return (
         <>
             <Header></Header>
-            {children}
+            <div className="main-bg">
+                <section className="pt-[81px]"></section>
+                {children}
+            </div>
             <Footer></Footer>
         </>
     );
