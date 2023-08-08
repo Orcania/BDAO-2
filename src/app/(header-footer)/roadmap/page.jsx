@@ -125,19 +125,17 @@ export default function useRoadmap() {
                             {/* Rest of your code... */}
                             <div className="flex md:flex-row flex-col gap-2 justify-center items-start">
                                 <div className="">
-                                    <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
+                                    <ul className=" space-y-7 text-[#F1775E] text-sm font-semibold">
                                         <li className=" py-3">Formation of UAE Legal Entity</li>
-                                        <li className="">AI Integration</li>
+                                        <li className="pb-7">AI Integration</li>
                                         <li className="">
                                             Active Participant Formation, Vote, and Selection
                                         </li>
-                                        <li className="">
-                                            BrickLayer Tenant Acquisition Service
-                                        </li>
+                                        <li className="">BrickLayer Tenant Acquisition Service</li>
                                     </ul>
                                 </div>
                                 <div className="text-sm font-semibold">
-                                    <ul className="list-disc list-inside space-y-10 md:space-y-5 w-64 md:w-52  text-white text-sm font-semibold">
+                                    <ul className=" space-y-10 md:space-y-5 w-64 md:w-52  text-white text-sm font-semibold">
                                         <li className="px-4 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent ">
                                             Release 1st Partner Occupier
                                         </li>
@@ -150,7 +148,7 @@ export default function useRoadmap() {
                                     </ul>
                                 </div>
                                 <div className="text-sm font-semibold">
-                                    <ul className="list-disc list-inside space-y-10 md:space-y-5 w-52  text-white text-sm font-semibold">
+                                    <ul className=" space-y-10 md:space-y-5 w-52  text-white text-sm font-semibold">
                                         <li className="px-4 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                             Launch Staking Program
                                         </li>
@@ -166,7 +164,7 @@ export default function useRoadmap() {
                         </div>
                         <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start">
                             {/* Rest of your code... */}
-                            <ul className="ml-8 list-disc list-inside space-y-10 md:space-y-5 text-justify w-56 text-white text-sm font-semibold">
+                            <ul className="ml-8  space-y-10 md:space-y-5 text-justify w-56 text-white text-sm font-semibold">
                                 <li className="px-4 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                     Launch of Bricklayer Listing Portal
                                 </li>
@@ -180,12 +178,16 @@ export default function useRoadmap() {
                         </div>
                         <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start text-justify">
                             {/* Rest of your code... */}
-                            <ul className="list-disc list-inside space-y-10 md:space-y-5 w-56 text-white text-sm font-semibold">
+                            <ul className=" space-y-10 md:space-y-2 w-56 text-white text-sm font-semibold">
                                 <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
-                                    Bricklayer Listing Portal to offer Asset Sales and Escrow
-                                    Platform
+                                    Bricklayer Listing Portal to offer Asset Sales
                                 </li>
-                                <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                <li className="px-4 py-3 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                    Escrow Platform
+                                </li>
+                                <br />
+
+                                <li className="px-4 py-2  hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Release 4th and 5th Partner Occupiers
                                 </li>
                             </ul>
@@ -291,17 +293,17 @@ export default function useRoadmap() {
                 {selectedYear === 1 && (
                     <div className="grid grid-cols-3 gap-5 justify-center items-start mb-44 p-5">
                         <div className="">
-                            <ul className="list-disc list-inside space-y-10 text-[#F1775E] text-sm font-semibold">
-                                <li className="py-2">Formation of UAE Legal Entity</li>
-                                <li className="py-2">AI Integration</li>
-                                <li className=" py-2">
+                            <ul className=" space-y-10 text-[#F1775E] text-sm font-semibold">
+                                <li className="py-3">Formation of UAE Legal Entity</li>
+                                <li className="py-3">AI Integration</li>
+                                <li className=" py-3">
                                     Active Participant Formation, Vote, and Selection
                                 </li>
                                 <li className="py-2">BrickLayer Tenant Acquisition Service</li>
                             </ul>
                         </div>
                         <div className="text-sm font-semibold">
-                            <ul className="list-disc list-inside space-y-10 md:space-y-5 w-40  text-white text-sm font-semibold">
+                            <ul className=" space-y-10 md:space-y-5 w-40  text-white text-sm font-semibold">
                                 <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent ">
                                     Release 1st Partner Occupier
                                 </li>
@@ -314,7 +316,7 @@ export default function useRoadmap() {
                             </ul>
                         </div>
                         <div className="text-sm font-semibold">
-                            <ul className="list-disc list-inside space-y-10 md:space-y-5 w-40  text-white text-sm font-semibold">
+                            <ul className=" space-y-10 md:space-y-5 w-40  text-white text-sm font-semibold">
                                 <li className="px-6 py-2 hover:bg-[#E16E56] hover:border hover:border-white border border-transparent">
                                     Launch Staking Program
                                 </li>
@@ -331,7 +333,7 @@ export default function useRoadmap() {
                 {selectedYear === 2 && (
                     <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start mb-64 p-5">
                         {/* Rest of your code... */}
-                        <ul className="list-disc list-inside space-y-10 md:space-y-5 w-44 text-white text-sm font-semibold">
+                        <ul className=" space-y-10 md:space-y-5 w-44 text-white text-sm font-semibold">
                             <li className="px-6 py-2 hover:bg-[#F09A87] hover:border hover:border-white border border-transparent ">
                                 Launch of Bricklayer Listing Portal
                             </li>
@@ -347,9 +349,12 @@ export default function useRoadmap() {
                 {selectedYear === 3 && (
                     <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start mb-72 p-5">
                         {/* Rest of your code... */}
-                        <ul className="list-disc list-inside space-y-10 md:space-y-5 w-56 text-white text-sm font-semibold">
+                        <ul className=" space-y-10 md:space-y-5 w-56 text-white text-sm font-semibold">
                             <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
-                                Bricklayer Listing Portal to offer Asset Sales and Escrow Platform
+                                Bricklayer Listing Portal to offer Asset Sales
+                            </li>
+                            <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                Escrow Platform
                             </li>
                             <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                 Release 4th and 5th Partner Occupiers
