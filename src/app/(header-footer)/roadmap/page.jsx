@@ -182,11 +182,11 @@ export default function useRoadmap() {
                                 <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Bricklayer Listing Portal to offer Asset Sales
                                 </li>
-                                <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                <li className="px-4 py-3 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Escrow Platform
-                                    <br />
-                                    <br />
                                 </li>
+                                <br />
+
                                 <li className="px-4 py-2  hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Release 4th and 5th Partner Occupiers
                                 </li>
