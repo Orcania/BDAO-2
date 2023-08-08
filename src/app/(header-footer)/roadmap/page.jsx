@@ -180,12 +180,18 @@ export default function useRoadmap() {
                         </div>
                         <div className="w-2/4 md:w-1/4 flex flex-col justify-start items-start text-justify">
                             {/* Rest of your code... */}
-                            <ul className=" space-y-10 md:space-y-16 w-56 text-white text-sm font-semibold">
-                                <li className="px-4 py-1 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
-                                    Bricklayer Listing Portal to offer Asset Sales <br/> Escrow
-                                    Platform
+                            <ul className=" space-y-10 md:space-y-2 w-56 text-white text-sm font-semibold">
+                                <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                    Bricklayer Listing Portal to offer Asset Sales 
+                                 
                                 </li>
                                 <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                   Escrow Platform
+                                   <br/>
+                                   <br/>
+                                 
+                                </li>
+                                <li className="px-4 py-2  hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Release 4th and 5th Partner Occupiers
                                 </li>
                             </ul>
