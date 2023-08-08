@@ -131,9 +131,7 @@ export default function useRoadmap() {
                                         <li className="">
                                             Active Participant Formation, Vote, and Selection
                                         </li>
-                                        <li className="">
-                                            BrickLayer Tenant Acquisition Service
-                                        </li>
+                                        <li className="">BrickLayer Tenant Acquisition Service</li>
                                     </ul>
                                 </div>
                                 <div className="text-sm font-semibold">
@@ -182,14 +180,12 @@ export default function useRoadmap() {
                             {/* Rest of your code... */}
                             <ul className=" space-y-10 md:space-y-2 w-56 text-white text-sm font-semibold">
                                 <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
-                                    Bricklayer Listing Portal to offer Asset Sales 
-                                 
+                                    Bricklayer Listing Portal to offer Asset Sales
                                 </li>
                                 <li className="px-4 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
-                                   Escrow Platform
-                                   <br/>
-                                   <br/>
-                                 
+                                    Escrow Platform
+                                    <br />
+                                    <br />
                                 </li>
                                 <li className="px-4 py-2  hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                     Release 4th and 5th Partner Occupiers
@@ -355,7 +351,10 @@ export default function useRoadmap() {
                         {/* Rest of your code... */}
                         <ul className=" space-y-10 md:space-y-5 w-56 text-white text-sm font-semibold">
                             <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
-                                Bricklayer Listing Portal to offer Asset Sales <br/> Escrow Platform
+                                Bricklayer Listing Portal to offer Asset Sales
+                            </li>
+                            <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
+                                Escrow Platform
                             </li>
                             <li className="px-6 py-2 hover:bg-[#FFCEC3] hover:border hover:border-white border border-transparent">
                                 Release 4th and 5th Partner Occupiers
