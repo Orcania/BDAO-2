@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
                     <section className="pt-[81px]"></section>
                     {children}
                 </div>
+                
 
                 {/* <Footer /> */}
             </body>
