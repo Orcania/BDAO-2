@@ -62,23 +62,23 @@ export default function Treasury() {
                                 }}
                             >
                                 <div className="flex-1 flex justify-start items-center gap-0 sm:gap-20">
-                                    <h1 className="ml-5 text-start">{item.rank + 1}</h1>
+                                    <h1 className="ml-5 text-start">{item?.rank + 1}</h1>
                                     <div className="flex gap-2 justify-center items-center">
-                                        <Image alt="" width={25} height={25} src={item.imageUrl} />
-                                        <h1 className="font-semibold">{item.name}</h1>
+                                        <Image alt="" width={25} height={25} src={item?.imageUrl} />
+                                        <h1 className="font-semibold">{item?.name}</h1>
                                         <h1 className="text-[#E26E5D] font-semibold">
-                                            {item.symbol}
+                                            {item?.symbol}
                                         </h1>
                                     </div>
                                 </div>
                                 <div className="flex-1 flex gap-10 justify-center items-center">
-                                    <h1 className="text-center">{item.price}</h1>
+                                    <h1 className="text-center">{item?.price}</h1>
                                 </div>
                                 <div className="flex-1 flex justify-center items-center ">
-                                    <h1 className="text-end">{item.holdings}</h1>
+                                    <h1 className="text-end">{item?.holdings}</h1>
                                 </div>
                                 <div className="flex-1 flex justify-center items-center ">
-                                    <h1 className="text-center">${item.value}</h1>
+                                    <h1 className="text-center">${item?.value}</h1>
                                 </div>
                             </div>
                         ))}
