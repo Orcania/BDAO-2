@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             <body className={`${ibm.variable} ${ps2p.variable}`}>
                 <LoadingComponent />
                 {/* <Header /> */}
-                <div className="bg-[#FBBC99]">
+                <div className="bg-[#FFB898]">
                     <section className="pt-[81px]"></section>
                     {children}
                 </div>

@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <nav
-            className={`bg-[#D86F60] fixed w-full z-50 top-0 left-0  ${
+            className={`bg-[#FFB898] fixed w-full z-50 top-0 left-0  ${
                 scrollY <= 100 ? "md:bg-transparent" : "md:bg-[#D86F60]"
             } transition-colors duration-300`}
         >
