@@ -855,7 +855,7 @@ const disclaimersEng = [
     },
     {
         id: 6,
-        disclaimer: "LICENSE CATAGORIES",
+        disclaimer: "LICENSE CATEGORIES",
         title: "",
         content: () => {
             return (
