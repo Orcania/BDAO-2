@@ -72,7 +72,7 @@ export default function Treasury() {
                                     </div>
                                 </div>
                                 <div className="flex-1 flex gap-10 justify-center items-center">
-                                    <h1 className="text-center">{item?.price}</h1>
+                                    <h1 className="text-center">${item?.price}</h1>
                                 </div>
                                 <div className="flex-1 flex justify-center items-center ">
                                     <h1 className="text-end">{item?.holdings}</h1>
