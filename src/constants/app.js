@@ -166,7 +166,7 @@ export const available = [
         img: "/media/models/linkedin.svg",
         profileLink: "https://www.linkedin.com/in/edy-haddad-42725a211/",
         name: "Edy Haddad",
-        title: "CTO",
+        title: "Technical Advisor",
     },
     {
         img: "/media/models/linkedin.svg",
